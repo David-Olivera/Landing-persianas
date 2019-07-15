@@ -1,0 +1,360 @@
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+/* Colores de menu */
+.nav-menu > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f09732;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  /* Color de cambio de menu*/
+  .nav-menu a:hover{
+      color: #f09732;
+  }
+
+  /* Color del sub-menu*/
+  .nav-menu ul li a:hover {
+    background: #f09732;
+    color: #fff;
+  }
+  /* Color de cambio de boton */
+  #hero .btn-get-started:hover {
+    background: #f78220;
+    border: 2px solid #fff;
+  }
+  /* Fondo de imagen de inicio */
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/logo-principal.jpg) top center;
+    background-size: cover;
+    position: relative;
+  } 
+  
+  #about {
+    background: #fff;
+    padding: 50px 0;
+  }
+  #btn-conocenos{
+    background: #f09732;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  /* Imagen de nosotros */
+  #about .about-container .background {
+    min-height: 300px;
+    background: url(../img/persinas-nosotros.png) center top no-repeat;
+    margin-bottom: 10px;
+  }
+
+  /* Color de iconos de Nosotros */  
+  #about .about-container .icon-box .icon {
+    float: left;
+    background: #fff;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #f78220;
+  }
+  #about .about-container .icon-box .icon i {
+    color: #f78220;
+    font-size: 24px;
+  }
+  
+
+  /* Products Section
+--------------------------------*/
+#products {
+  background: #f7f7f7;
+  padding: 15px 0;
+}
+
+#promo {
+  background: #f7f7f7;
+  padding: 15px 0;
+}
+#products #products-wrapper {
+  padding-right: 15px;
+}
+
+#products #products-flters {
+  padding: 0;
+  margin: 0 0 45px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#products #products-flters li {
+  cursor: pointer;
+  margin: 0 10px;
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: #fff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#products #products-flters li:hover, #products #products-flters li.filter-active {
+  background: #f78220;
+  color: #fff;
+}
+
+#products .products-item {
+  position: relative;
+  height: 225px;
+  overflow: hidden !important;
+  margin-bottom: 15px;
+  transition: all 350ms ease;
+  transform: scale(1);
+}
+
+#products .products-item a {
+  display: block;
+  margin-right: 15px;
+}
+
+#products .products-item img {
+  position: relative;
+  top: 0;
+  align-content: center;
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#products .products-item .details {
+  height: 50px;
+  background: #f78220;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: -50px;
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#products .products-item .details h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  padding: 8px 0 2px 8px;
+  margin: 0;
+}
+
+#products .products-item .details span {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  padding-left: 8px;
+}
+
+#products .products-item:hover .details {
+  bottom: 0;
+}
+
+#products .products-item:hover img {
+  top: -30px;
+}
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections Header
+--------------------------------*/
+.section-header .section-title {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.section-header .section-description {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #999;
+}
+
+
+#measure {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/measure.jpg) fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+#measure .cta-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#measure .cta-text {
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  #measure .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+#measure .cta-btn {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#measure .cta-btn:hover {
+  background: #f78220;
+  border: 2px solid #f78220;
+}
+
+.boton_backgroup{
+  color: #333;
+}
+
+.boton_backgroup:hover{
+  background: #f78220;
+  color: #fff;
+}
+.boton_backgroup:active{
+  content: div;
+  background: #f78220;
+  color: #fff;
+}
+
+.boton_backgroup-2{
+  color: #333;
+    background: #fff;
+}
+
+.boton_backgroup-2:hover{
+  background: #f78220;
+  color: #fff;
+}
+.boton_backgroup-2:active{
+  content: div;
+  background: #f78220;
+  color: #fff;
+}
+.boton_gris:hover{
+  background: #f78220;
+  color: #fff;
+}
+.boton_gris:active{
+  content: div;
+  background: #f78220;
+  color: #fff;
+}
+
+  /* Imagen de nosotros */
+
+.productos
+{
+    padding-top:100px;
+    padding-bottom: 200px;
+}
+
+#persianas{
+  transition: all 0.5s;
+    padding-top: 40px;
+  padding-bottom: 40px;
+}    
+#persianas .section-title{
+    color: #333;
+}    
+#persianas .section-description{
+    color: #333;
+}
+#persianas .card{
+    color: #333;
+}
+
+  #persianas .persianas-container .background {
+    min-height: 300px;
+    background: url(../img/persinas-nosotros.png) center no-repeat;
+    padding-bottom: 10px;
+  }
+  #div-auto{
+    text-align: center;
+  }
+.collapse.show {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#toldos{
+    background: #f7f7f7;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#mallas{
+    background: #f7f7f7;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#tapetes{
+    background: #f7f7f7;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+#imgs{
+   position:absolute; 
+    z-index:1;
+    width:100%; 
+    height:100%;
+}
+
+.icon_naranja{
+    color: #f78220;
+}
+
+/* Login container */
+.masthead{
+
+  padding-top:10rem;
+  padding-bottom:calc(10rem - 56px);
+  background-image:url(../img/logo-principal.jpg);
+  background-position:center center;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover
+  }
