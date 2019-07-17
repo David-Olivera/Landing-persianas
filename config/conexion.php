@@ -1,5 +1,5 @@
 <?php
-require_once('../config/parametros.php');
+require_once('parametros.php');
 class Conexion{
 	/**/
 	function __construct(){

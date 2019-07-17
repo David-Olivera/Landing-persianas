@@ -108,6 +108,7 @@
             </ul>
           </li>
           <li><a href="#measure">Como tomar medidas</a></li>
+          <li><a href="view/inicio_sesion.php">Login</a></li>
           </ul>
       </nav><!-- #nav-menu-container -->
     </div>

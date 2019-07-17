@@ -1,3 +1,8 @@
+<?php
+	
+	require_once '../../config/conexion.php';
+	$conexion= new Conexion;	
+?>
 <!DOCTYPE html>
 <html lang="en">
 

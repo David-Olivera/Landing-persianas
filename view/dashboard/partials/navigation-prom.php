@@ -3,8 +3,8 @@
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="navbar-brand-wrapper d-flex justify-content-center">
         <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
-          <a class="navbar-brand brand-logo" href="index.php"><img src="../../images/logo_colores.png" alt="logo"/></a>
-          <a class="navbar-brand brand-logo-mini" href="index.php"><span alt="logo" class="mdi mdi-account-circle"></span></a>
+          <a class="navbar-brand brand-logo" href="dashboard.php"><img src="../../images/logo_colores.png" alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="dashboard.php"><span alt="logo" class="mdi mdi-account-circle"></span></a>
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-sort-variant"></span>
           </button>
@@ -14,10 +14,10 @@
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-              <span class="nav-profile-name">Louis Barnett</span>
+              <span class="nav-profile-name">Opciones</span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item">
+              <a class="dropdown-item" href="../../config/logout.php" >
                 <i class="mdi mdi-logout text-primary"></i>
                 Logout
               </a>
@@ -35,7 +35,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="../../index.php">
+            <a class="nav-link" href="../../dashboard.php">
               <i class="mdi mdi-home menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
