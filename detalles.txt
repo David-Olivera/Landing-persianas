@@ -1,0 +1,5 @@
+*Cambiar subtitulos de prodcutos
+*Informacion de contactos a donde lleva?
+*Reordenar el menu
+*Camciar id y seccion de promociones (no llamarlo igual que el de prodcutos)
+*cambiar animacion de promociones (imagenes)

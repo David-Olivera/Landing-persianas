@@ -88,7 +88,7 @@ p {
 --------------------------------*/
 #products {
   background: #f7f7f7;
-  padding: 15px 0;
+  padding: 15px 0px;
 }
 
 #promo {
@@ -97,6 +97,7 @@ p {
 }
 #products #products-wrapper {
   padding-right: 15px;
+  width: 100%;
 }
 
 #products #products-flters {
@@ -286,13 +287,13 @@ p {
 
 .productos
 {
-    padding-top:100px;
+    padding-top:70px;
     padding-bottom: 200px;
 }
 
 #persianas{
   transition: all 0.5s;
-    padding-top: 40px;
+    padding-top: 70px;
   padding-bottom: 40px;
 }    
 #persianas .section-title{
@@ -357,4 +358,14 @@ p {
   -moz-background-size:cover;
   -o-background-size:cover;
   background-size:cover
+  }
+
+  #col_products{
+    position: relative;
+    height: 450px;
+    width: 100%;
+    overflow: hidden !important;
+    margin-bottom: 15px;
+    transition: all 350ms ease;
+    transform: scale(1);
   }

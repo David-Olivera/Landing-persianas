@@ -1,3 +1,7 @@
+<?php
+  require_once 'controller/traer_productos.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,24 +139,27 @@
         <div class="section-header">
           <h3 class="section-title">PROMOCIONES</h3>
           <p class="section-description">¡APROVECHA NUESTRAS PROMOCIONES!</p>
+        </div>    
+        <div class="row" id="products-wrapper">   
+        <?php
+        $resultado =array_filter($conexion->seleccionarValores($sql));
+        $i = 0;
+        foreach($resultado as $datos){
+          $idActual = $datos['id_promocion'];
+          $ImgActual = $datos['imagen_promo'];
+          $fechaActual = $datos['fecha_promo'];
+          $i++;
+            echo <<<HTML
+                <div id="promo_col" class="col-lg-6 col-md-6 products-item filter-app">
+                    <a>
+                      <img  id="imgs" src="view/dashboard/img/promociones/$ImgActual" alt=""  >
+                    </a>
+                </div>
+HTML;
+          }
+        ?>
+
         </div>
-        <div class="row" id="products-wrapper">
-          
-            <div  class="col-lg-6 col-md-6 products-item filter-app">
-            <a >
-              <img  id="imgs" src="img/promo_1.png" alt="">
-              
-            </a>
-          </div>
-
-          <div class="col-lg-6 col-md-6 products-item filter-app">
-            <a>
-              <img id="imgs" src="img/promo_2.png" alt="">
-            </a>
-          </div>
-
-        </div>
-
       </div>
     </section>
       
@@ -275,23 +282,25 @@
                         
                     <div class="container">
                         <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_dobles));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
                         <!--AREA DE TEXTO--> 
-                       <div class="col-lg-6 col-md-6 card-body">     
-                           
+                              <div class="col-lg-6 col-md-6 card-body">     
                                 <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-
-                        </div>
-                          <!--AREA DE IMAGENES-->
-                        <div class="col-lg-6 col-md-6 card-body">
-                                
-                                <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-                        </div>  
+                                        <img  src="view/dashboard/img/productos/persianas/$ImgActual" alt="$tipoActual" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
                         
                     </div>
                         </div>
@@ -309,23 +318,25 @@
                        
                            <div class="container">
                         <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_traslucidas));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
                         <!--AREA DE TEXTO--> 
-                       <div class="col-lg-6 col-md-6 card-body">     
-                           
+                              <div class="col-lg-6 col-md-6 card-body">     
                                 <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-
-                        </div>
-                          <!--AREA DE IMAGENES-->
-                        <div class="col-lg-6 col-md-6 card-body">
-                                
-                                <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-                        </div>  
+                                        <img  src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
                         
                     </div>
                         </div>
@@ -344,23 +355,25 @@
                         
                         <div class="container">
                         <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_black));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
                         <!--AREA DE TEXTO--> 
-                       <div class="col-lg-6 col-md-6 card-body">     
-                           
+                              <div class="col-lg-6 col-md-6 card-body">     
                                 <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-
-                        </div>
-                          <!--AREA DE IMAGENES-->
-                        <div class="col-lg-6 col-md-6 card-body">
-                                
-                                <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-                        </div>  
+                                        <img  src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
                         
                     </div>
                         </div>
@@ -401,23 +414,25 @@
                            
                         <div class="container">
                         <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_toldos_automaticos));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
                         <!--AREA DE TEXTO--> 
-                       <div class="col-lg-6 col-md-6 card-body">     
-                           
+                              <div class="col-lg-6 col-md-6 card-body">     
                                 <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-
-                        </div>
-                          <!--AREA DE IMAGENES-->
-                        <div class="col-lg-6 col-md-6 card-body">
-                                
-                                <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-                        </div>  
+                                        <img  src="view/dashboard/img/productos/toldos/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
                         
                     </div>
                         </div>
@@ -439,23 +454,25 @@
                         
                         <div class="container">
                         <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_toldos_manuales));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
                         <!--AREA DE TEXTO--> 
-                       <div class="col-lg-6 col-md-6 card-body">     
-                           
+                              <div class="col-lg-6 col-md-6 card-body">     
                                 <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-
-                        </div>
-                          <!--AREA DE IMAGENES-->
-                        <div class="col-lg-6 col-md-6 card-body">
-                                
-                                <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-                        </div>  
+                                        <img  src="view/dashboard/img/productos/toldos/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
                         
                     </div>
                         </div>
@@ -472,8 +489,7 @@
       
     </section><!-- #facts -->
 
-      
-      
+     
      <!--==========================
       Sombrillas de sol
     ============================-->
@@ -488,25 +504,25 @@
       <div class="container">
         <div class="row about-container">
 
-           
-                        <!--AREA DE TEXTO--> 
-                       <div class="col-lg-6 col-md-6 card-body">     
+             <!-- Traer los registros de sombrillas de sol -->
+          <?php
+              $resultado =array_filter($conexion->seleccionarValores($sql_sombrilla));
+              $i = 0;
+              foreach($resultado as $datos){
+                $idActual = $datos['id_producto'];
+                $ImgActual = $datos['imagen_produ'];
+                $fechaActual = $datos['fecha_produ'];
+                $i++;
+            echo <<<HTML
+            <div id="col_products" class="col-lg-6 col-md-6 card-body">     
                            
-                                <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-
-                        </div>
-                          <!--AREA DE IMAGENES-->
-                        <div class="col-lg-6 col-md-6 card-body">
-                                
-                                <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-                        </div>  
-                        
+                           <div class="item">
+                                   <img  src="view/dashboard/img/productos/sombrillas_sol/$ImgActual" alt="" style="width:100%;height: 400px;" >
+                                 </div>
+              </div>
+HTML;
+          }
+        ?>              
                     </div>
                         </div>
                            
@@ -528,25 +544,24 @@
       
       <div class="container">
         <div class="row about-container">
-
-           
-                        <!--AREA DE TEXTO--> 
-                       <div class="col-lg-6 col-md-6 card-body">     
+        <?php
+              $resultado =array_filter($conexion->seleccionarValores($sql_mallas));
+              $i = 0;
+              foreach($resultado as $datos){
+                $idActual = $datos['id_producto'];
+                $ImgActual = $datos['imagen_produ'];
+                $fechaActual = $datos['fecha_produ'];
+                $i++;
+            echo <<<HTML
+            <div id="col_products" class="col-lg-6 col-md-6 card-body">     
                            
-                                <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-
-                        </div>
-                          <!--AREA DE IMAGENES-->
-                        <div class="col-lg-6 col-md-6 card-body">
-                                
-                                <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-                        </div>  
+                           <div class="item">
+                                   <img  src="view/dashboard/img/productos/mallas_sombra/$ImgActual" alt="" style="width:100%;height: 400px;">
+                                 </div>
+              </div>
+HTML;
+          }
+        ?>        
                         
                     </div>
                         </div>
@@ -572,23 +587,24 @@
         <div class="row about-container">
 
            
-                        <!--AREA DE TEXTO--> 
-                       <div class="col-lg-6 col-md-6 card-body">     
+        <?php
+              $resultado =array_filter($conexion->seleccionarValores($sql_lonas));
+              $i = 0;
+              foreach($resultado as $datos){
+                $idActual = $datos['id_producto'];
+                $ImgActual = $datos['imagen_produ'];
+                $fechaActual = $datos['fecha_produ'];
+                $i++;
+            echo <<<HTML
+            <div id="col_products" class="col-lg-6   col-md-6 card-body">     
                            
-                                <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-
-                        </div>
-                          <!--AREA DE IMAGENES-->
-                        <div class="col-lg-6 col-md-6 card-body">
-                                
-                                <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-                        </div>  
+                           <div class="item">
+                                   <img  src="view/dashboard/img/productos/lonas_tapiz/$ImgActual" alt="" style="width:100%;height: 400px;">
+                                 </div>
+              </div>
+HTML;
+          }
+        ?>        
                         
                     </div>
                         </div>
@@ -611,24 +627,24 @@
       <div class="container">
         <div class="row about-container">
 
-           
-                        <!--AREA DE TEXTO--> 
-                       <div class="col-lg-6 col-md-6 card-body">     
+        <?php
+              $resultado =array_filter($conexion->seleccionarValores($sql_tapetes));
+              $i = 0;
+              foreach($resultado as $datos){
+                $idActual = $datos['id_producto'];
+                $ImgActual = $datos['imagen_produ'];
+                $fechaActual = $datos['fecha_produ'];
+                $i++;
+            echo <<<HTML
+            <div id="col_products" class="col-lg-6   col-md-6 card-body">     
                            
-                                <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-
-                        </div>
-                          <!--AREA DE IMAGENES-->
-                        <div class="col-lg-6 col-md-6 card-body">
-                                
-                                <div class="item">
-                                        <img  src="img/products/persiana_enrollable_duo_2.png" alt="Chicago" style="width:100%;">
-                                      </div>
-
-                        </div>  
+                           <div class="item">
+                                   <img  src="view/dashboard/img/productos/tapetes/$ImgActual" alt="" style="width:100%;height: 400px;">
+                                 </div>
+              </div>
+HTML;
+          }
+        ?>     
                         
                     </div>
                         </div>

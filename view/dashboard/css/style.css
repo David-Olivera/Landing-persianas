@@ -20849,9 +20849,8 @@ dl li {
 }
 
 .table td img {
-  width: 36px;
-  height: 36px;
-  border-radius: 100%;
+  width: 100px;
+  height: 50px;
 }
 
 .table td .badge {
@@ -20899,7 +20898,7 @@ dl li {
 }
 
 .dataTables_wrapper .dataTable .btn {
-  padding: 0.1rem 1rem;
+  padding: 0.5rem 1rem;
   vertical-align: top;
 }
 
@@ -21881,6 +21880,9 @@ dl li {
 .rtl ul.chats::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
+}
+#profileDropdown:hover{
+  color: #f09732;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

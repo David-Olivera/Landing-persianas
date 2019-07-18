@@ -1,3 +1,10 @@
+<?php
+  	
+	require_once '../../../../config/conexion.php';
+	$conexion= new Conexion(); 
+	$sql="select * from productos where tipo_produ = 'lonas_tapiz';";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +12,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Lonas y Papel tapiz | Mr.Persianas</title>
+  <title>Lonas y Papel Tapiz | Mr.Persianas</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css">
@@ -39,12 +46,53 @@
               <div class="d-flex justify-content-between flex-wrap">
                 <div class="d-flex align-items-end flex-wrap">
                   <div class="mr-md-3 mr-xl-5">
-                    <h2>Bienvenidos al dashboard de Lonas de uso rudo y Papel tapiz</h2>
-                    <p class="mb-md-0">Administración de información del apartador de Lonas y Papel tapiz.</p>
+                    <h2>Bienvenidos al dashboard de Persianas</h2>
+                    <p class="mb-md-0">Administración de información del apartador de persianas.</p>
                   </div>
                 </div>
                 <div class="d-flex justify-content-between align-items-end flex-wrap">
-                  <a href="" class="btn btn-success">Agregar Producto</a>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" >Agregar Imagen</button>
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Nueva Imagen</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <!--OBTENGO FECHA Y HORA ACTUAL-->
+                        <?php
+                          date_default_timezone_set("America/Mexico_City");
+                          $fecha=date("Y-m-d");
+                          $hora=date("H:i:s");
+                          
+                        ?>
+                      <!-- Modal body -->
+                      
+                        <div class="modal-body">
+                                <form action="../../controller/agregar_lonas_tapiz.php" method="POST" name="frmnoticia" enctype="multipart/form-data">
+                                                                               
+                                      <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="" type ="file" name="imagen" class="form-control" placeholder="Titulo" required>                         
+                                      </div>
+                                
+                                      <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="" type="hidden"class="form-control" placeholder="Fecha" value="<?php echo $fecha ?>"  name="fecha"  required>
+                                        <input id="" type="hidden"class="form-control" placeholder="Tipo" value="lonas_tapiz"  name="tipo"  required>
+                                      </div>
+                  
+                                     <div class="form-group text-center">
+                                          <button   href="" class="btn btn-success">Agregar </button>
+                                      </div>                                     
+                                 </form> 
+                          </div>
+                    </div>
+                   </div>
+                 </div>
                 </div>
               </div>
             </div>
@@ -54,30 +102,43 @@
               <div class="card">
                 <div class="card-body">
                   <div class="table-responsive">
-                    <table id="recent-purchases-listing" class="table">
+                    <table id="recent-purchases-listing" class="table text-center">
                       <thead>
                         <tr>
-                            <th>Nombre de Imagen</th>
+                            <th>Imagen</th>
                             <th>Fecha de Subida</th>
                             <th>Opciones</th>
                         </tr>
                       </thead>
                       <tbody>
+                      <!-- Script para eliminar con js -->
+                      <script>
+                      function eliminar(articulo){
+                        if(confirm("Estas seguro de eliminar el articulo")){
+                          location.href="../../controller/eliminar_lonas_tapiz.php?id="+articulo;
+                        };
+                      }
+                    </script>
+                      <!-- Funcion para traer todos los registros de promociones -->
+                      <?php
+                      $resultado =array_filter($conexion->seleccionarValores($sql));
+                      $i = 0;
+                      foreach($resultado as $datos){
+                        $idActual = $datos['id_producto'];
+                        $ImgActual = $datos['imagen_produ'];
+                        $fechaActual = $datos['fecha_produ'];
+                        $i++;
+                        echo<<<HTML
                         <tr>
-                            <td>Betty Hunt</td>
-                            <td>Ui design not completed</td>
-                            <td> <a href="" class="btn btn-warning">Editar</a> <a href="" class="btn btn-danger">Eliminar</a> </td>
+                           <td><img src="../../img/productos/lonas_tapiz/$ImgActual"/></td>
+                          <td>$fechaActual</td>
+                          <td><button onclick="eliminar($idActual)" type="button" class="btn btn-danger">Eliminar</button> </td>
                         </tr>
-                        <tr>
-                            <td>Artie Lambert</td>
-                            <td>Ui design completed</td>
-                            <td> <a href="" class="btn btn-warning">Editar</a> <a href="" class="btn btn-danger">Eliminar</a> </td>
-                        </tr>
-                        <tr>
-                            <td>Cacob Kennedy</td>
-                            <td>New project</td>
-                            <td> <a href="" class="btn btn-warning">Editar</a> <a href="" class="btn btn-danger">Eliminar</a> </td>
-                       </tr>
+HTML;
+
+
+                      }
+                       ?> 
                       </tbody>
                     </table>
                   </div>

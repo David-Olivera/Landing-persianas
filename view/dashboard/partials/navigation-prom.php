@@ -12,16 +12,9 @@
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item nav-profile dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-              <span class="nav-profile-name">Opciones</span>
+          <li class="nav-item nav-profile">
+            <a class="nav-link" href="#" id="profileDropdown">Cerrar Session
             </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item" href="../../config/logout.php" >
-                <i class="mdi mdi-logout text-primary"></i>
-                Logout
-              </a>
-            </div>
           </li>
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
@@ -51,7 +44,7 @@
               <li class="nav-item"> <a class="nav-link" href="../../pages/products/persianas.php">Persianas</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/products/toldos.php">Toldos</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/products/sombrillas.php">Sombrillas de sol</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/products/malla_sombra.php">Malla sombra</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/products/mallas_sombra.php">Malla sombra</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/products/lona_rudo_papel_tapiz.php">Lonas y Papel tapiz</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/products/tapetes_decorativos.php">Tapetes Decorativos</a></li>
                </ul>

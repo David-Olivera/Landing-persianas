@@ -1,3 +1,10 @@
+<?php
+  	
+	require_once '../../../../config/conexion.php';
+	$conexion= new Conexion(); 
+	$sql="select * from promociones;";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +12,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Dashboard</title>
+  <title>Promociones | Mr.Persianas</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css">
@@ -44,7 +51,47 @@
                   </div>
                 </div>
                 <div class="d-flex justify-content-between align-items-end flex-wrap">
-                  <a href="" class="btn btn-success">Agregar Promoción</a>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" >Agregar Promoción</button>
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Nueva Promocion</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <!--OBTENGO FECHA Y HORA ACTUAL-->
+                        <?php
+                          date_default_timezone_set("America/Mexico_City");
+                          $fecha=date("Y-m-d");
+                          $hora=date("H:i:s");
+                          
+                        ?>
+                      <!-- Modal body -->
+                      
+                        <div class="modal-body">
+                                <form action="../../controller/agregar_promocion.php" method="POST" name="frmnoticia" enctype="multipart/form-data">
+                                                                               
+                                      <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="" type ="file" name="imagen" class="form-control" placeholder="Titulo" required>                         
+                                      </div>
+                                
+                                      <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="" type="hidden"class="form-control" placeholder="Fecha" value="<?php echo $fecha ?>"  name="fecha"  required>
+                                      </div>
+                  
+                                     <div class="form-group text-center">
+                                          <button   href="" class="btn btn-success">Agregar </button>
+                                      </div>                                     
+                                 </form> 
+                          </div>
+                    </div>
+                   </div>
+                 </div>
                 </div>
               </div>
             </div>
@@ -54,30 +101,43 @@
               <div class="card">
                 <div class="card-body">
                   <div class="table-responsive">
-                    <table id="recent-purchases-listing" class="table">
+                    <table id="recent-purchases-listing" class="table text-center">
                       <thead>
                         <tr>
-                            <th>Nombre de Imagen</th>
+                            <th>Imagen</th>
                             <th>Fecha de Subida</th>
                             <th>Opciones</th>
                         </tr>
                       </thead>
                       <tbody>
+                      <!-- Script para eliminar con js -->
+                      <script>
+                      function eliminar(articulo){
+                        if(confirm("Estas seguro de eliminar el articulo")){
+                          location.href="../../controller/eliminar_promocion.php?id="+articulo;
+                        };
+                      }
+                    </script>
+                      <!-- Funcion para traer todos los registros de promociones -->
+                      <?php
+                      $resultado =array_filter($conexion->seleccionarValores($sql));
+                      $i = 0;
+                      foreach($resultado as $datos){
+                        $idActual = $datos['id_promocion'];
+                        $ImgActual = $datos['imagen_promo'];
+                        $fechaActual = $datos['fecha_promo'];
+                        $i++;
+                        echo<<<HTML
                         <tr>
-                            <td>Betty Hunt</td>
-                            <td>Ui design not completed</td>
-                            <td> <a href="" class="btn btn-warning">Editar</a> <a href="" class="btn btn-danger">Eliminar</a> </td>
+                           <td><img src="../../img/promociones/$ImgActual"/></td>
+                          <td>$fechaActual</td>
+                          <td><button onclick="eliminar($idActual)" type="button" class="btn btn-danger">Eliminar</button> </td>
                         </tr>
-                        <tr>
-                            <td>Artie Lambert</td>
-                            <td>Ui design completed</td>
-                            <td> <a href="" class="btn btn-warning">Editar</a> <a href="" class="btn btn-danger">Eliminar</a> </td>
-                        </tr>
-                        <tr>
-                            <td>Cacob Kennedy</td>
-                            <td>New project</td>
-                            <td> <a href="" class="btn btn-warning">Editar</a> <a href="" class="btn btn-danger">Eliminar</a> </td>
-                       </tr>
+HTML;
+
+
+                      }
+                       ?> 
                       </tbody>
                     </table>
                   </div>

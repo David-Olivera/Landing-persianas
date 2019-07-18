@@ -2,7 +2,7 @@
   	
 	require_once '../../../../config/conexion.php';
 	$conexion= new Conexion(); 
-	$sql="select * from productos where tipo_produ = 'sombrillas';";
+	$sql="select * from productos where tipo_produ = 'mallas_sombra';";
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Sombrillas de Sol | Mr.Persianas</title>
+  <title>Mallas Sombra | Mr.Persianas</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css">
@@ -72,7 +72,7 @@
                       <!-- Modal body -->
                       
                         <div class="modal-body">
-                                <form action="../../controller/agregar_sombrilla.php" method="POST" name="frmnoticia" enctype="multipart/form-data">
+                                <form action="../../controller/agregar_malla.php" method="POST" name="frmnoticia" enctype="multipart/form-data">
                                                                                
                                       <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -82,7 +82,7 @@
                                       <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                                         <input id="" type="hidden"class="form-control" placeholder="Fecha" value="<?php echo $fecha ?>"  name="fecha"  required>
-                                        <input id="" type="hidden"class="form-control" placeholder="Tipo" value="sombrillas"  name="tipo"  required>
+                                        <input id="" type="hidden"class="form-control" placeholder="Tipo" value="mallas_sombra"  name="tipo"  required>
                                       </div>
                   
                                      <div class="form-group text-center">
@@ -115,7 +115,7 @@
                       <script>
                       function eliminar(articulo){
                         if(confirm("Estas seguro de eliminar el articulo")){
-                          location.href="../../controller/eliminar_sombrilla.php?id="+articulo;
+                          location.href="../../controller/eliminar_malla.php?id="+articulo;
                         };
                       }
                     </script>
@@ -130,7 +130,7 @@
                         $i++;
                         echo<<<HTML
                         <tr>
-                           <td><img src="../../img/productos/sombrillas_sol/$ImgActual"/></td>
+                           <td><img src="../../img/productos/mallas_sombra/$ImgActual"/></td>
                           <td>$fechaActual</td>
                           <td><button onclick="eliminar($idActual)" type="button" class="btn btn-danger">Eliminar</button> </td>
                         </tr>
