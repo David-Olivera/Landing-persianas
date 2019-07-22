@@ -1,10 +1,12 @@
 <?php
-	require_once '../config/conexion.php';
-	$conexion= new Conexion(); 
-	require_once '../controller/login.php';
-	
-	
+session_start();
+ if(!empty($_SESSION['user']))
+ {
+   header("location: dashboard/dashboard.php");
+ }
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,7 +76,7 @@
               <div  class="panel-heading">
                 <div style="padding-top:30px" class="panel-body" >
                          
-                  <form method="POST" name="frmlogin"  action="<?php $_SERVER['PHP_SELF']; ?>" id="loginform" class="form-horizontal" role="form">   
+                  <form method="POST" name="frmlogin"  action="../controladores/controlador.php" id="loginform" class="form-horizontal" role="form">   
                                       
                     <div style="margin-bottom: 25px" class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>

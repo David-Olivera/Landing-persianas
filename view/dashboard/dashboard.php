@@ -1,7 +1,12 @@
 <?php
-	
+  session_start();
+  if(empty($_SESSION['user']))
+  {
+    header("location: ../iniciar_sesion.php");
+  }
 	require_once '../../config/conexion.php';
-	$conexion= new Conexion;	
+  $conexion= new Conexion;	
+ 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +43,7 @@
               <div class="d-flex justify-content-between flex-wrap">
                 <div class="d-flex align-items-end flex-wrap">
                   <div class="mr-md-3 mr-xl-5">
-                    <h2>Bienvenidos al dashboard principal</h2>
+                    <h2>ADMINISTRADOR DE CONTENIDO MR. PERSIANAS</h2>
                     <p class="mb-md-0">Gestiona la informacion de tu pagina web para un mejor de control de tus productos.</p>
                   </div>
                 </div>
@@ -46,12 +51,12 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 grid-margin stretch-card">
+            <div class="col-md-8 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h1 class="card-title">GESTION DE ELEMENTOS</h1>
+                  <h1 class="card-title"></h1>
                   <p class="card-description">
-                    Hagamos tu pagina web mas dinamica y agradable para los usuarios
+                    ADMINISTRA TU CONTENIDO.
                   </p>
                   <div class="template-demo">
                     <img src="../../img/logo-dashboard.jpg" alt="Dashboard" class="img-thumbnail">
@@ -59,19 +64,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Mr.Persianas</h4>
-                  <p class="card-description">
-                  Somos fabricantes de persianas, toldos, anticiclónicas, malla solar y más
-                  </p>
-                  <div class="template-demo">
-                    <img src="../../img/persianas-doble.jpg" alt="Mr.Persianas" class="img-thumbnail">
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
         <!-- content-wrapper ends -->

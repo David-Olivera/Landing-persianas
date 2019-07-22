@@ -13,7 +13,7 @@
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item nav-profile">
-            <a class="nav-link" href="#" id="profileDropdown">Cerrar Session
+            <a class="nav-link" href="../../../../core/cerrar_sesion.php" id="profileDropdown">Cerrar Session
             </a>
           </li>
         </ul>

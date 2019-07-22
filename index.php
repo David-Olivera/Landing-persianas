@@ -78,7 +78,7 @@
           <li class="menu-active"><a href="#hero">Inicio</a></li>
           <li><a href="#contact">Contacto</a>
               <ul>
-                  <li><a href="#persianas">Informacion de contactos</a></li>
+                  <li><a href="#contact">Informacion de contactos</a></li>
                   <li><a href="#persianas">Envianos un WhatsApp</a>
                   <ul>
                      <li><a href="https://web.whatsapp.com/send?phone=+5219981073559&amp;text=Hola, me gustaría recibir mas información." target="_blank" >¿Quieres obtener mas información?</a></li>
@@ -194,7 +194,9 @@ HTML;
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 products-item filter-app">
+          
+            
+            <div class="col-lg-3 col-md-6 products-item filter-app">
             <a href="#sombrillas">
               <img src="img/products/sombrilla.jpg" alt="">
               <div class="details">
@@ -203,8 +205,18 @@ HTML;
               </div>
             </a>
           </div>
+            
+                 <div class="col-lg-2 col-md-6 products-item filter-app">
+            <a href="#sombrillas">
+              <img src="img/products/sombrilla.jpg" alt="">
+              <div class="details">
+                <h4>Anticiclonicas</h4>
+                <span>Para exteriores grandes</span>
+              </div>
+            </a>
+          </div>
 
-          <div class="col-lg-3 col-md-6 products-item filter-card">
+          <div class="col-lg-2 col-md-6 products-item filter-card">
             <a href="#mallas">
               <img src="img/products/malla.jpg" alt="">
               <div class="details">
@@ -214,7 +226,7 @@ HTML;
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 products-item filter-card">
+          <div class="col-lg-2 col-md-6 products-item filter-card">
             <a href="#lonas">
               <img src="img/products/lonas.jpg" alt="">
               <div class="details">
@@ -233,6 +245,8 @@ HTML;
               </div>
             </a>
           </div>
+            
+           
         </div>
 
       </div>
@@ -278,9 +292,39 @@ HTML;
                     <!--BOTON 1-->
                     <div id="collapseTwo" class="collapse fondo_gris" aria-labelledby="headingTwo" data-parent="#accordionExample">
                        
+                      <!---->  
+                        
+                        <p>
+                          <button class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Percinanas  1</button>
+                          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">persianas 2</button>
+                          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">persianas 3</button>
+                        </p>
+                     
+                        <div class="row">
+                          <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                              <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                              <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    
+                      <!---->
                         
                         
-                    <div class="container">
+                        
+                        
+                        
+                        
+                        <div class="container">
                         <div class="row">    
                         <?php
                             $resultado =array_filter($conexion->seleccionarValores($sql_persianas_dobles));
@@ -398,7 +442,7 @@ HTML;
       <div class="container persianas-container wow fadeIn">
           <div class="section-header">
             <h3 class="section-title">TOLDOS</h3>
-            <p class="section-description">Somos fabricantes de persianas.</p>
+            <p class="section-description">Contamos con toldos manuales o automatizados.</p>
           </div>
           <div class="bs-example">
             <div class=" accordion" id="accordionExample">
@@ -497,7 +541,7 @@ HTML;
       <section class="productos" id="sombrillas">
           <div class="section-header">
             <h3 class="section-title">SOMBRILLAS DE SOL</h3>
-            <p class="section-description">Somos fabricantes de persianas.</p>
+            <p class="section-description">Elige entre una gran variedad de sombrillas (encuentra sombrillas para jardín) con las que contamos y aprovecha todos sus grandes beneficios para la protección solar..</p>
           </div>
           
       
@@ -538,7 +582,7 @@ HTML;
       <section class="productos" id="mallas">
           <div class="section-header">
             <h3 class="section-title">MALLAS DE SOMBRA</h3>
-            <p class="section-description">Somos fabricantes de persianas.</p>
+            <p class="section-description">Mallas sombra para estacionamiento o escuelas.</p>
           </div>
           
       
@@ -579,7 +623,7 @@ HTML;
       <section class="productos" id="lonas">
           <div class="section-header">
             <h3 class="section-title">LONAS DE USO RUDO Y PAPEL TAPIZ</h3>
-            <p class="section-description">Somos fabricantes de persianas.</p>
+            <p class="section-description">Papel tapiz elegance y lonas de uso rudo.</p>
           </div>
           
       
@@ -620,7 +664,7 @@ HTML;
     <section class="productos" id="tapetes">
           <div class="section-header">
             <h3 class="section-title">TAPETES DECORATIVOS</h3>
-            <p class="section-description">Somos fabricantes de persianas.</p>
+            <p class="section-description">Tapetes decorativos de alta calidad.</p>
           </div>
           
       
@@ -769,8 +813,8 @@ HTML;
 
 
             <div class="social-links">
-              <a title="Siguenos en nuestra pagina de Facebook" href="https://www.facebook.com/mrpersianas2015/?ref=br_rs" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a title="Contactanos por WhatsApp" href="https://web.whatsapp.com/send?phone=+5219981073559&amp;text=Hola, me gustaría recibir mas información." target="_blank" ><i class="fa fa-whatsapp"></i></a>
+              Nuestro facebook: <a title="Siguenos en nuestra pagina de Facebook" href="https://www.facebook.com/mrpersianas2015/?ref=br_rs" target="_blank"><i class="fa fa-facebook"></i></a><br><br>
+              Nuestro WhatsApp: <a title="Contactanos por WhatsApp" href="https://web.whatsapp.com/send?phone=+5219981073559&amp;text=Hola, me gustaría recibir mas información." target="_blank" ><i class="fa fa-whatsapp"></i></a>
             </div>
 
           </div>
@@ -779,7 +823,7 @@ HTML;
             <div class="form">
               <div id="sendmessage">Su mensaje ha sido enviado. ¿Gracias!</div>
               <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
+              <form action="enviar_correo.php" method="post" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Escribe almenos 4 letras." />
                   <div class="validation"></div>
