@@ -2,7 +2,7 @@
   	
 	require_once '../../../../config/conexion.php';
 	$conexion= new Conexion(); 
-	$sql="SELECT * FROM productos WHERE tipo_produ = 'Automaticas' OR tipo_produ = 'Manuales';";
+	$sql="SELECT * FROM productos WHERE tipo_produ = 'Brazos' OR tipo_produ = 'Caida' OR tipo_produ = 'Pergolio';";
 ?>
 
 <!DOCTYPE html>
@@ -46,8 +46,8 @@
               <div class="d-flex justify-content-between flex-wrap">
                 <div class="d-flex align-items-end flex-wrap">
                   <div class="mr-md-3 mr-xl-5">
-                    <h2>Bienvenidos al dashboard de Persianas</h2>
-                    <p class="mb-md-0">Administración de información del apartador de persianas.</p>
+                    <h2>Bienvenidos al dashboard de Toldos</h2>
+                    <p class="mb-md-0">Administración de información del apartador de toldos.</p>
                   </div>
                 </div>
                 <div class="d-flex justify-content-between align-items-end flex-wrap">
@@ -84,8 +84,9 @@
                                         <input id="" type="hidden"class="form-control" placeholder="Fecha" value="<?php echo $fecha ?>"  name="fecha"  required>
                                         <select class="form-control " name="tipo" id="exampleFormControlSelect1" autofocus required>
                                           <option value=""> -- Seleccione una opcion --</option>
-                                          <option value="Automaticas">Automaticas</option>
-                                          <option value="Manuales">Manuales</option>
+                                          <option value="Brazos">Brazos ocultos</option>
+                                          <option value="Caida">Caida libre</option>
+                                        <option value="Pergolio">Pergolio</option>
                                         </select>    
                                      </div>
                   

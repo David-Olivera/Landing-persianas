@@ -2,22 +2,7 @@
   	
 	require_once '../../../../config/conexion.php';
 	$conexion= new Conexion(); 
-	$sql="SELECT * FROM productos WHERE tipo_produ = 'Enr_black' or 
-                                        tipo_produ = 'Enr_semi' or 
-                                        tipo_produ = 'Enr_tras' or 
-                                        tipo_produ = 'Enr_screen' or 
-                                        tipo_produ = 'Duo_black' or 
-                                        tipo_produ = 'She_black' or 
-                                        tipo_produ = 'She_semi' or 
-                                        tipo_produ = 'She_tras' or 
-                                        tipo_produ = 'Sha_tras' or 
-                                        tipo_produ = 'Rom_tras' or 
-                                        tipo_produ = 'Rom_semi' or 
-                                        tipo_produ = 'Rom_black' or 
-                                        tipo_produ = 'Hor_mad' or
-                                        tipo_produ = 'Alu_alu' or 
-                                        tipo_produ = 'Ver_tela'";
-
+	$sql="select * from productos where tipo_produ = 'mallas_anticiclonicas';";
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +12,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Persianas | Mr.Persianas</title>
+  <title>Mallas Anticiclonicas | Mr.Persianas</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css">
@@ -61,8 +46,8 @@
               <div class="d-flex justify-content-between flex-wrap">
                 <div class="d-flex align-items-end flex-wrap">
                   <div class="mr-md-3 mr-xl-5">
-                    <h2>Bienvenidos al dashboard de Persianas</h2>
-                    <p class="mb-md-0">Administración de información del apartador de persianas.</p>
+                    <h2>Bienvenidos al dashboard de Malla anticiclonicas</h2>
+                    <p class="mb-md-0">Administración de información del apartador de mallas anticiclonicas.</p>
                   </div>
                 </div>
                 <div class="d-flex justify-content-between align-items-end flex-wrap">
@@ -87,7 +72,7 @@
                       <!-- Modal body -->
                       
                         <div class="modal-body">
-                                <form action="../../controller/agregar_persiana.php" method="POST" name="frmnoticia" enctype="multipart/form-data">
+                                <form action="../../controller/agregar_mallas_anticiclonica.php" method="POST" name="frmnoticia" enctype="multipart/form-data">
                                                                                
                                       <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -97,25 +82,7 @@
                                       <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                                         <input id="" type="hidden"class="form-control" placeholder="Fecha" value="<?php echo $fecha ?>"  name="fecha"  required>
-                                        <select class="form-control " name="tipo" id="exampleFormControlSelect1" autofocus required>
-                                          <option value=""> -- Seleccione una opcion --</option>
-                                          <option value="Enr_black">Enrrollables black out</option>
-                                          <option value="Enr_tras">Enrrollables traslucidas</option>
-                                          <option value="Enr_semi">Enrrollables semitraslucida</option>
-                                          <option value="Enr_screen">Enrrollables screen</option>
-                                            <option value="Duo_black">Duo traslucida</option>
-                                            <option value="She_black">Sheer black out</option>
-                                            <option value="She_semi">Sheer semitraslucida</option>
-                                            <option value="She_tras">Sheer traslucida</option>
-                                            <option value="Sha_tras">Shangrila traslucida</option>
-                                   <option value="Rom_tras">Romana traslucida</option>
-                                   <option value="Rom_semi">Romana semitraslucida</option>
-                                   <option value="Rom_black">Romana black out</option>
-                                   <option value="Hor_mad">Horizontal madera</option>
-                                   <option value="Ver_tela">Vertical tela</option>
-                                   <option value="Alu_alu">Aluminio</option>
-                                   
-                                        </select>
+                                        <input id="" type="hidden"class="form-control" placeholder="Tipo" value="mallas_anticiclonicas"  name="tipo"  required>
                                       </div>
                   
                                      <div class="form-group text-center">
@@ -140,7 +107,6 @@
                         <tr>
                             <th>Imagen</th>
                             <th>Fecha de Subida</th>
-                            <th>Tipo de Persiana</th>
                             <th>Opciones</th>
                         </tr>
                       </thead>
@@ -149,7 +115,7 @@
                       <script>
                       function eliminar(articulo){
                         if(confirm("Estas seguro de eliminar el articulo")){
-                          location.href="../../controller/eliminar_persiana.php?id="+articulo;
+                          location.href="../../controller/eliminar_malla_anticiclonica.php?id="+articulo;
                         };
                       }
                     </script>
@@ -161,13 +127,11 @@
                         $idActual = $datos['id_producto'];
                         $ImgActual = $datos['imagen_produ'];
                         $fechaActual = $datos['fecha_produ'];
-                        $tipoActual = $datos['tipo_produ'];
                         $i++;
                         echo<<<HTML
                         <tr>
-                           <td><img src="../../img/productos/persianas/$ImgActual"/></td>
+                           <td><img src="../../img/productos/mallas_anticiclonicas/$ImgActual"/></td>
                           <td>$fechaActual</td>
-                          <td>$tipoActual</td>
                           <td><button onclick="eliminar($idActual)" type="button" class="btn btn-danger">Eliminar</button> </td>
                         </tr>
 HTML;

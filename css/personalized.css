@@ -49,7 +49,9 @@ p {
   } 
   
   #about {
-    background: #fff;
+    background: #f7f7f7;
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding: 50px 0;
   }
   #btn-conocenos{
@@ -60,8 +62,10 @@ p {
   /* Imagen de nosotros */
   #about .about-container .background {
     min-height: 300px;
-    background: url(../img/persinas-nosotros.png) center top no-repeat;
+    background: url(../img/persianas-doble.jpg) center top no-repeat;
+      margin-top: 50px;
     margin-bottom: 10px;
+      position:fixed;
   }
 
   /* Color de iconos de Nosotros */  
@@ -187,7 +191,7 @@ p {
 --------------------------------*/
 .section-header .section-title {
   font-size: 32px;
-  color: #111;
+  color: #f78220;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -197,7 +201,8 @@ p {
 .section-header .section-description {
   text-align: center;
   padding-bottom: 10px;
-  color: #999;
+  color: #333;
+    font-weight: 600;
 }
 
 
@@ -260,8 +265,8 @@ p {
 }
 
 .boton_backgroup-2{
-  color: #333;
-    background: #fff;
+  color: #fff;
+    background: #58595b;
 }
 
 .boton_backgroup-2:hover{
@@ -297,10 +302,11 @@ p {
   padding-bottom: 40px;
 }    
 #persianas .section-title{
-    color: #333;
+    color: #f78220;
 }    
 #persianas .section-description{
     color: #333;
+    font-weight: 600;
 }
 #persianas .card{
     color: #333;
@@ -336,6 +342,7 @@ p {
 }
 
 
+
 #imgs{
    position:absolute; 
     z-index:1;
@@ -369,3 +376,9 @@ p {
     transition: all 350ms ease;
     transform: scale(1);
   }
+
+
+
+/*tipo de persianas
+*/
+

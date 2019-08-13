@@ -13,7 +13,7 @@
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item nav-profile">
-            <a class="nav-link" href="../../../../core/cerrar_sesion.php" id="profileDropdown">Cerrar Session
+            <a class="nav-link" href="../../../../core/cerrar_sesion.php" id="profileDropdown">Cerrar Sesion
             </a>
           </li>
         </ul>
@@ -45,6 +45,7 @@
                 <li class="nav-item"> <a class="nav-link" href="../../pages/products/toldos.php">Toldos</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/products/sombrillas.php">Sombrillas de sol</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/products/mallas_sombra.php">Malla sombra</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/products/mallas_anticiclonicas.php">Malla anticiclonicas</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/products/lona_rudo_papel_tapiz.php">Lonas y Papel tapiz</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/products/tapetes_decorativos.php">Tapetes Decorativos</a></li>
                </ul>

@@ -27,7 +27,8 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/personalized.css" rel="stylesheet">
+  <link href="css/personalized.css" rel="stylesheet">  
+    <link href="css/actualiz.css" rel="stylesheet">
 
     
     
@@ -76,10 +77,70 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Inicio</a></li>
+              <li class="menu-has-children"><a href="#products">Productos</a>
+            <ul>
+              <li class="menu-has-children"><a href="#persianas">Persianas</a>
+                <ul>
+                  <li><a href="#persianas">Enrollables</a>
+                    <ul>
+                        <li><a href="#persianas">Black out</a></li>
+                        <li><a href="#persianas">Traslucidas decorativas</a></li>
+                        <li><a href="#persianas">Semistraslucidas</a></li>
+                        <li><a href="#persianas">Screen</a></li>
+                    </ul>
+                    </li>
+                  <li><a href="#persianas">Duo</a>
+                        <ul>
+                        <li><a href="#persianas">Blaccer traslucida</a></li>
+                       </ul>
+                    </li>
+                  <li><a href="#persianas">Sheer elegance</a>
+                     <ul>
+                        <li><a href="#persianas">Black out</a></li>
+                       <li><a href="#persianas">Trasluicida</a></li>
+                       <li><a href="#persianas">Semi traslucida</a></li>
+                       </ul>
+                    </li>
+                    <li><a href="#persianas">Sangri-lla</a>
+                     <ul>
+                        <li><a href="#persianas">Traslucida</a></li>
+                       </ul>
+                    </li>
+                    <li><a href="#persianas">Romanas</a>
+                     <ul>
+                         <li><a href="#persianas">Black out</a></li>
+                       <li><a href="#persianas">Trasluicida</a></li>
+                       <li><a href="#persianas">Semi traslucida</a></li>
+                     </ul>
+                    </li>
+                    <li><a href="#persianas">Madera Horizontales</a>
+                    </li>
+                    <li><a href="#persianas">Tela Verticales</a></li>
+                    <li><a href="#persianas">Aluminio horizontales</a></li>
+                </ul>
+              </li>
+              <li><a href="#toldos">Toldos</a>
+                <ul>
+                    <li><a href="#toldos">Brazos ocultos</a></li>
+                    <li><a href="#toldos">Caida libre</a></li>
+                    <li><a href="#toldos">Pergola</a></li>
+                  </ul>
+              </li>
+              <li><a href="#sombrillas">Sombrillas de sol</a></li>
+                <li><a href="#anticiclonicas">Anticiclonicas, Cortinas Europeas</a></li>
+                <li><a href="">Otros productos</a>
+             <ul> 
+              <li><a href="#mallas">Malla sombra</a></li>
+              <li><a href="#lonas">Papel tapiz</a></li>
+              <li><a href="#tapetes">Tapetes decorativos</a></li>
+             </ul>
+                 </li>
+            </ul>
+          </li>
           <li><a href="#contact">Contacto</a>
               <ul>
-                  <li><a href="#contact">Informacion de contactos</a></li>
-                  <li><a href="#persianas">Envianos un WhatsApp</a>
+                  <li><a href="#contact">Información de contactos</a></li>
+                  <li><a href="#persianas">Envíanos un WhatsApp</a>
                   <ul>
                      <li><a href="https://web.whatsapp.com/send?phone=+5219981073559&amp;text=Hola, me gustaría recibir mas información." target="_blank" >¿Quieres obtener mas información?</a></li>
                      <li><a href="https://web.whatsapp.com/send?phone=+5219981073559&amp;text=Hola, me gustaría cotizar." target="_blank">¿Quieres cotizar?</a></li>
@@ -90,29 +151,7 @@
         
             <li><a href="#about">Nosotros</a></li>
           <li><a href="#products">Promociones</a></li>
-          <li class="menu-has-children"><a href="#products">Productos</a>
-            <ul>
-              <li class="menu-has-children"><a href="#persianas">Persianas</a>
-                <ul>
-                  <li><a href="#persianas">Enrollables dobles</a></li>
-                  <li><a href="#persianas">Enrollables traslucidas</a></li>
-                  <li><a href="#persianas">Enrollables black out</a></li>
-                </ul>
-              </li>
-              <li><a href="#toldos">Toldos</a>
-                <ul>
-                    <li><a href="#toldos">Automatizados</a></li>
-                    <li><a href="#toldos">Manuales</a></li>
-                  </ul>
-              </li>
-              <li><a href="#sombrillas">Sombrillas de sol</a></li>
-              <li><a href="#mallas">Malla sombra</a></li>
-              <li><a href="#lonas">Lonas de uso rudo y Papel tapiz</a></li>
-              <li><a href="#tapetes">Tapetes decorativos</a></li>
-            </ul>
-          </li>
-          <li><a href="#measure">Como tomar medidas</a></li>
-          <li><a href="view/inicio_sesion.php">Login</a></li>
+           <li><a href="view/inicio_sesion.php">Login</a></li>
           </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -137,8 +176,8 @@
   <section id="products">
       <div class="container wow fadeInUp">
         <div class="section-header">
-          <h3 class="section-title">PROMOCIONES</h3>
-          <p class="section-description">¡APROVECHA NUESTRAS PROMOCIONES!</p>
+          <h3 class="section-title zoom_title">PROMOCIONES</h3>
+          <p class="section-description zoom">¡APROVECHA NUESTRAS PROMOCIONES!</p>
         </div>    
         <div class="row" id="products-wrapper">   
         <?php
@@ -170,8 +209,8 @@ HTML;
     <section id="products">
       <div class="container wow fadeInUp">
         <div class="section-header">
-          <h3 class="section-title">Productos</h3>
-          <p class="section-description">Somos fabricantes de persianas, toldos, anticiclónicas, malla solar y más</p>
+          <h3 class="section-title zoom_title">Productos</h3>
+          <p class="section-description zoom">Somos fabricantes de persianas, toldos, anticiclónicas, malla solar y más</p>
         </div>
         <div class="row" id="products-wrapper">
           <div class="col-lg-6 col-md-6 products-item filter-app">
@@ -186,7 +225,7 @@ HTML;
 
           <div class="col-lg-6 col-md-6 products-item filter-app">
             <a href="#toldos">
-              <img src="img/products/toldos.jpg" alt="">
+              <img src="img/products/toldoss.jpg" alt="">
               <div class="details">
                 <h4>Toldos</h4>
                 <span>Automatizados y Manuales</span>
@@ -196,9 +235,9 @@ HTML;
 
           
             
-            <div class="col-lg-3 col-md-6 products-item filter-app">
+            <div class="col-lg-4 col-md-6 products-item filter-app">
             <a href="#sombrillas">
-              <img src="img/products/sombrilla.jpg" alt="">
+              <img src="img/products/sombrillas.jpg" alt="">
               <div class="details">
                 <h4>Sombrillas de sol</h4>
                 <span>Para exteriores grandes</span>
@@ -206,9 +245,9 @@ HTML;
             </a>
           </div>
             
-                 <div class="col-lg-2 col-md-6 products-item filter-app">
+                 <div class="col-lg-4 col-md-6 products-item filter-app">
             <a href="#sombrillas">
-              <img src="img/products/sombrilla.jpg" alt="">
+              <img src="img/products/anticiclonicas.jpg" alt="">
               <div class="details">
                 <h4>Anticiclonicas</h4>
                 <span>Para exteriores grandes</span>
@@ -216,9 +255,9 @@ HTML;
             </a>
           </div>
 
-          <div class="col-lg-2 col-md-6 products-item filter-card">
+          <div class="col-lg-4 col-md-6 products-item filter-card">
             <a href="#mallas">
-              <img src="img/products/malla.jpg" alt="">
+              <img src="img/products/mallas.jpg" alt="">
               <div class="details">
                 <h4>Malla sombra</h4>
                 <span>Para estacionamientos y escuelas</span>
@@ -226,19 +265,19 @@ HTML;
             </a>
           </div>
 
-          <div class="col-lg-2 col-md-6 products-item filter-card">
+          <div class="col-lg-2}6 col-md-6 products-item filter-card">
             <a href="#lonas">
-              <img src="img/products/lonas.jpg" alt="">
+              <img src="img/products/papel.jpg" alt="">
               <div class="details">
-                <h4>Lonas de uso rudo y Papel tapiz</h4>
-                <span>Papel tapiz elegante y Lonas de uso rudo</span>
+                <h4>Papel tapiz</h4>
+                <span>Papel tapiz elegante</span>
               </div>
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 products-item filter-web">
+          <div class="col-lg-6 col-md-6 products-item filter-web">
             <a href="#tapetes">
-              <img src="img/products/tapetes.png" alt="">
+              <img src="img/products/tapetess.jpg" alt="">
               <div class="details">
                 <h4>Tapetes decorativos</h4>
                 <span>Gran variedad y alta calidad</span>
@@ -269,15 +308,15 @@ HTML;
           
          <!--==HEADER==-->
                   <div class="section-header">
-            <h3 class="section-title">Persianas</h3>
-            <p class="section-description">Somos fabricantes de persianas.</p>
+            <h3 class="section-title zoom_title">Persianas</h3>
+            <p class="section-description zoom">Somos fabricantes de persianas.</p>
           </div>
                    
           
         <!--==CUERPO DE LOS BOTONES==-->
           <div class="bs-example">
               
-            <div class=" accordion" id="accordionExample">
+            <div class="accordion" id="accordionExample">
                 
                 <!--PERSIANAS DOBLES-->  
                 <div id="p-dobles"  class="card">
@@ -285,49 +324,38 @@ HTML;
                       <!--TITULO-->
                     <div class="card-header  boton_backgroup" id="headingTwo">
                         <h2 class=" mb-2">
-                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>PERSIANAS ENROLLABLES DOBLES</a>
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>PERSIANAS ENROLLABLES</a>
                         </h2>
                     </div>
                     
                     <!--BOTON 1-->
                     <div id="collapseTwo" class="collapse fondo_gris" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                       
-                      <!---->  
-                        
-                        <p>
-                          <button class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Percinanas  1</button>
-                          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">persianas 2</button>
-                          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">persianas 3</button>
-                        </p>
-                     
-                        <div class="row">
-                          <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample1">
-                              <div class="card card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                              <div class="card card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                  <!--SUBMENU-->
+                  
+                        <!--==CUERPO DE LOS BOTONES==-->
+          <div class="bs-example-2">
+              
+            <div class="accordion" id="accordionExample2">
+                
+                <!--PERSIANAS DOBLES-->  
+                <div id="p-dobles"  class="card">
                     
-                      <!---->
-                        
-                        
-                        
-                        
-                        
-                        
-                        <div class="container">
-                        <div class="row">    
+                      <!--TITULO-->
+                    <div class="card-header boton_backgroup-2" id="headingTen">
+                        <h2 class=" mb-2">
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseTen"><i class="fa fa-plus"></i>BLACK OUT</a>
+                        </h2>
+                    </div>
+                    
+                    <!--BOTON 1-->
+                    <div id="collapseTen" class="collapse fondo_gris" aria-labelledby="headingTen" data-parent="#accordionExample2">
+               
+                      
+                     
+                        <div class="container" >
+                        <div class="row ">    
                         <?php
-                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_dobles));
+                            $resultado =array_filter($conexion->seleccionarValores($sql_k));
                             $i = 0;
                             foreach($resultado as $datos){
                               $idActual = $datos['id_producto'];
@@ -338,8 +366,8 @@ HTML;
                                 echo <<<HTML
                         <!--AREA DE TEXTO--> 
                               <div class="col-lg-6 col-md-6 card-body">     
-                                <div class="item">
-                                        <img  src="view/dashboard/img/productos/persianas/$ImgActual" alt="$tipoActual" style="width:100%;height:300px;">
+                                <div class="item div-img">
+                                        <img class="img" src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
                                 </div>
                               </div>
 HTML;
@@ -348,22 +376,197 @@ HTML;
                         
                     </div>
                         </div>
-                    </div>
-             </div>
+                    
+                </div>
                 
-                <!--PERSIANAS TRASLUCIDAS-->
+                
+                
+                
+                
+                
+                
+                <!--PERSIANAS DUO-->
+                <div  class="card">
+                    <div id="p-traslucidas" class="card-header boton_backgroup-2" id="headingEleven">
+                        <h2 class="mb-2 ">
+                            <a class="btn btn-lig btn-block text-lg-left" data-toggle="collapse" data-target="#collapseEleven"><i class="fa fa-plus"></i>SEMITRASLUCIDAS</a>						
+                        </h2>
+                    </div>
+                       <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample2">
+                       
+                                                  
+                    <!--PERSIANAS BLACK OUT LLAMADA DE IMAGENES-->
+                    
+                        <div class="container">
+                        <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_enrollables_semi));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
+                        <!--AREA DE TEXTO--> 
+                              <div class="col-lg-6 col-md-6 card-body">     
+                                <div class="item div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
+                        
+                    </div>
+                        </div>
+                    
+        
+                 <!--PERSIANAS BLACK OUT LLAMADA DE IMAGENES-->  
+                
+                       </div>
+                </div>
+                
+                <!--PERSIANAS BLACKOUT-->
+                <div  class="card">
+                    <div id="p-black" class="card-header boton_backgroup-2" id="headingthirteen">
+                        <h2 class="mb-2">
+                            <a class="btn btn-lig btn-block text-lg-left " data-toggle="collapse" data-target="#collapseThirteen"><i class="fa fa-plus"></i>TRASLUCIDAS</a>                     
+                        </h2>
+                    </div>
+                    <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample2">
+                       
+              
+                      
+                        <div class="container">
+                        <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_enrollables_tras));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
+                        <!--AREA DE TEXTO--> 
+                              <div class="col-lg-6 col-md-6 card-body">     
+                                <div class="item div-img">
+                                        <img  class="img"  src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
+               
+                        </div>
+                    
+                </div>
+                        
+                 <!--PERSIANAS BLACK OUT LLAMADA DE IMAGENES-->  
+                        
+                    </div>
+                </div>
+                    
+                    
+                         <!--PERSIANAS BLACKOUT-->
+                <div  class="card">
+                    <div id="p-black" class="card-header boton_backgroup-2" id="headingFourteen">
+                        <h2 class="mb-2">
+                            <a class="btn btn-lig btn-block text-lg-left " data-toggle="collapse" data-target="#collapseFourteen"><i class="fa fa-plus"></i>SCREEN</a>                     
+                        </h2>
+                    </div>
+                    <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample2">
+                       
+                 
+                      
+                        <div class="container">
+                        <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_enrollables_screen));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
+                        <!--AREA DE TEXTO--> 
+                              <div class="col-lg-6 col-md-6 card-body">     
+                                <div class="item div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
+                        
+                
+                        </div>
+                    
+                </div>
+                        
+                 <!--PERSIANAS BLACK OUT LLAMADA DE IMAGENES-->  
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+                        
+                        
+                        
+                        
+                        <!--SUBMENU-->
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                </div>
+                
+                
+                
+                
+                
+                <!--PERSIANAS DUO-->
                 <div  class="card">
                     <div id="p-traslucidas" class="card-header boton_backgroup" id="headingOne">
                         <h2 class="mb-2 ">
-                            <a class="btn btn-lig btn-block text-lg-left" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i>PERSIANAS ENROLLABLE TRASLUCIDAS</a>						
+                            <a class="btn btn-lig btn-block text-lg-left" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i>PERSIANAS DUO</a>						
                         </h2>
                     </div>
                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                        
-                           <div class="container">
+                                      <!--==CUERPO DE LOS BOTONES==-->
+          <div class="bs-example-3">
+              
+            <div class="accordion" id="accordionExample3">
+                
+                <!--PERSIANAS DOBLES-->  
+                <div id="p-dobles"  class="card">
+                    
+                      <!--TITULO-->
+                    <div class=" card-header  boton_backgroup-2" id="headingFiveteen">
+                        <h2 class=" mb-2">
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseFiveteen"><i class="fa fa-plus"></i>BLACK OUT</a>
+                        </h2>
+                    </div>
+                    
+                    <!--BOTON 1-->
+                    <div id="collapseFiveteen" class="collapse fondo_gris" aria-labelledby="headingFiveteen" data-parent="#accordionExample3">
+               
+                      
+                        <div class="container">
                         <div class="row">    
                         <?php
-                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_traslucidas));
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_duo));
                             $i = 0;
                             foreach($resultado as $datos){
                               $idActual = $datos['id_producto'];
@@ -374,8 +577,8 @@ HTML;
                                 echo <<<HTML
                         <!--AREA DE TEXTO--> 
                               <div class="col-lg-6 col-md-6 card-body">     
-                                <div class="item">
-                                        <img  src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                <div class="item div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
                                 </div>
                               </div>
 HTML;
@@ -384,6 +587,24 @@ HTML;
                         
                     </div>
                         </div>
+                    
+                </div>
+  
+                
+                
+            </div>
+        </div>
+                        
+                        
+                        
+                        
+                 
+                        
+                        
+                    </div>
+                           
+                           
+                           
                            
                        </div>
                 </div>
@@ -392,15 +613,35 @@ HTML;
                 <div  class="card">
                     <div id="p-black" class="card-header boton_backgroup" id="headingThree">
                         <h2 class="mb-2">
-                            <a class="btn btn-lig btn-block text-lg-left " data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i>PERSIANAS ENROLLABLES BLACK OUT</a>                     
+                            <a class="btn btn-lig btn-block text-lg-left " data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i>PERSIANAS SHEER ELEGANCE</a>                     
                         </h2>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                         
+               
+                                        <!--==CUERPO DE LOS BOTONES==-->
+          <div class="bs-example-4">
+              
+            <div class="accordion" id="accordionExample4">
+                
+                <!--PERSIANAS DOBLES-->  
+                <div id="p-dobles"  class="card">
+                    
+           <!--TITULO-->
+                    <div class=" card-header  boton_backgroup-2" id="headingF">
+                        <h2 class=" mb-2">
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseF"><i class="fa fa-plus"></i>BLACK OUT</a>
+                        </h2>
+                    </div>
+                    
+                    <!--BOTON 1-->
+                    <div id="collapseF" class="collapse fondo_gris" aria-labelledby="headingF" data-parent="#accordionExample4">
+               
+                      
                         <div class="container">
                         <div class="row">    
                         <?php
-                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_black));
+                            $resultado =array_filter($conexion->seleccionarValores( $sql_persianas_sheer_black));
                             $i = 0;
                             foreach($resultado as $datos){
                               $idActual = $datos['id_producto'];
@@ -411,8 +652,8 @@ HTML;
                                 echo <<<HTML
                         <!--AREA DE TEXTO--> 
                               <div class="col-lg-6 col-md-6 card-body">     
-                                <div class="item">
-                                        <img  src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                <div class="item div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
                                 </div>
                               </div>
 HTML;
@@ -421,17 +662,622 @@ HTML;
                         
                     </div>
                         </div>
-                           
+                    
+                </div>
+  
+                
+                
+                
+                
+                
+                
+                
+                <!--PERSIANAS DUO-->
+                <div  class="card">
+                    <!--TITULO-->
+                    <div class=" card-header  boton_backgroup-2" id="headingFi">
+                        <h2 class=" mb-2">
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseFi"><i class="fa fa-plus"></i>SEMITRASLUCIDAS</a>
+                        </h2>
+                    </div>
+                    
+                    <!--BOTON 1-->
+                    <div id="collapseFi" class="collapse fondo_gris" aria-labelledby="headingFi" data-parent="#accordionExample4">
+               
+                      
+                        <div class="container">
+                        <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_sheer_semi));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
+                        <!--AREA DE TEXTO--> 
+                              <div class="col-lg-6 col-md-6 card-body">     
+                                <div class="item div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
+                        
+                    </div>
+                        </div>
+                    
+                </div>
+                        </div>
+                    
+        
+                 <!--PERSIANAS BLACK OUT LLAMADA DE IMAGENES-->  
+                
+                       </div>
+                </div>
+                
+                <!--PERSIANAS BLACKOUT-->
+                <div  class="card">
+                      <!--TITULO-->
+                    <div class=" card-header  boton_backgroup-2" id="headingFo">
+                        <h2 class=" mb-2">
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseFo"><i class="fa fa-plus"></i>TRASLUCIDAS</a>
+                        </h2>
+                    </div>
+                    
+                    <!--BOTON 1-->
+                    <div id="collapseFo" class="collapse fondo_gris" aria-labelledby="headingFo" data-parent="#accordionExample4">
+               
+                      
+                        <div class="container">
+                        <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_sheer_tras));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
+                        <!--AREA DE TEXTO--> 
+                              <div class="col-lg-6 col-md-6 card-body">     
+                                <div class="item div-img">
+                                        <img  class="img"  src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
+                        
+                    </div>
+                        </div>
+                    
+                </div>
+                    
+                    
+           
+                
+                
+            </div>
+        </div>
+                        
+                        
+                        
+                        
+                        <!--SUBMENU-->
+                        
+                        
+                        
+                    </div>
+                    
                         
                        
                     </div>
+                
+                
+                
+                
+                
+                  <!--PERSIANAS DUO-->
+                <div  class="card">
+                    <div id="p-traslucidas" class="card-header boton_backgroup" id="headingSHAN">
+                        <h2 class="mb-2 ">
+                            <a class="btn btn-lig btn-block text-lg-left" data-toggle="collapse" data-target="#collapseSHAN"><i class="fa fa-plus"></i>PERSIANAS SHANGRI-LLA</a>						
+                        </h2>
+                    </div>
+                       <div id="collapseSHAN" class="collapse" aria-labelledby="headingSHAN" data-parent="#accordionExample">
+                       
+                                      <!--==CUERPO DE LOS BOTONES==-->
+          <div class="bs-example-3">
+              
+            <div class="accordion" id="accordionExample3">
+                
+                <!--PERSIANAS DOBLES-->  
+                <div id="p-dobles"  class="card">
+                    
+                      <!--TITULO-->
+                    <div class=" card-header  boton_backgroup-2" id="headingFe">
+                        <h2 class=" mb-2">
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseFe"><i class="fa fa-plus"></i>TRASLUCIDAS</a>
+                        </h2>
+                    </div>
+                    
+                    <!--BOTON 1-->
+                    <div id="collapseFe" class="collapse fondo_gris" aria-labelledby="headingFe" data-parent="#accordionExample3">
+               
+                      
+                        <div class="container">
+                        <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_shangrila));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
+                        <!--AREA DE TEXTO--> 
+                              <div class="col-lg-6 col-md-6 card-body">     
+                                <div class="item  div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
+                        
+                    </div>
+                        </div>
+                    
+                </div>
+  
+                
+                
+            </div>
+        </div>
+                        
+                        
+                        
+                        
+                        <!--SUBMENU-->
+                        
+                        
+                        
+                    </div>
+                           
+                           
+                           
+                           
+                       </div>
+                </div>
+                
+                
+                
+                
+                  <!--PERSIANAS BLACKOUT-->
+                <div  class="card">
+                    <div id="p-black" class="card-header boton_backgroup" id="headingROMA">
+                        <h2 class="mb-2">
+                            <a class="btn btn-lig btn-block text-lg-left " data-toggle="collapse" data-target="#collapseROMA"><i class="fa fa-plus"></i>PERSIANAS ROMANAS</a>                     
+                        </h2>
+                    </div>
+                    <div id="collapseROMA" class="collapse" aria-labelledby="headingROMA" data-parent="#accordionExample">
+                        
+               
+                                        <!--==CUERPO DE LOS BOTONES==-->
+          <div class="bs-example-4">
+              
+            <div class="accordion" id="accordionExample4">
+                
+                <!--PERSIANAS DOBLES-->  
+                <div id="p-dobles"  class="card">
+                    
+           <!--TITULO-->
+                    <div class=" card-header  boton_backgroup-2" id="headingFeee">
+                        <h2 class=" mb-2">
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseFeee"><i class="fa fa-plus"></i>BLACK OUT</a>
+                        </h2>
+                    </div>
+                    
+                    <!--BOTON 1-->
+                    <div id="collapseFeee" class="collapse fondo_gris" aria-labelledby="headingFeee" data-parent="#accordionExample4">
+               
+                      
+                        <div class="container">
+                        <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_romana_black));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
+                        <!--AREA DE TEXTO--> 
+                              <div class="col-lg-6 col-md-6 card-body">     
+                                <div class="item div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
+                        
+                    </div>
+                        </div>
+                    
+                </div>
+  
+                
+                
+                
+                
+                
+                
+                
+                <!--PERSIANAS DUO-->
+                <div  class="card">
+                    <!--TITULO-->
+                    <div class=" card-header  boton_backgroup-2" id="headingFio">
+                        <h2 class=" mb-2">
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseFio"><i class="fa fa-plus"></i>TRASLUCIDA</a>
+                        </h2>
+                    </div>
+                    
+                    <!--BOTON 1-->
+                    <div id="collapseFio" class="collapse fondo_gris" aria-labelledby="headingFio" data-parent="#accordionExample4">
+               
+                      
+                        <div class="container">
+                        <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_romana_tras));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
+                        <!--AREA DE TEXTO--> 
+                              <div class="col-lg-6 col-md-6 card-body">     
+                                <div class="item div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
+                        
+                    </div>
+                        </div>
+                    
+                </div>
+                        </div>
+                    
+        
+                 <!--PERSIANAS BLACK OUT LLAMADA DE IMAGENES-->  
+                
+                       </div>
+                </div>
+                
+                <!--PERSIANAS BLACKOUT-->
+                <div  class="card">
+                      <!--TITULO-->
+                    <div class=" card-header  boton_backgroup-2" id="headingFoo">
+                        <h2 class=" mb-2">
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseFoo"><i class="fa fa-plus"></i>SEMITRASLUCIDA</a>
+                        </h2>
+                    </div>
+                    
+                    <!--BOTON 1-->
+                    <div id="collapseFoo" class="collapse fondo_gris" aria-labelledby="headingFoo" data-parent="#accordionExample4">
+               
+                      
+                        <div class="container">
+                        <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_romana_semi));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
+                        <!--AREA DE TEXTO--> 
+                              <div class="col-lg-6 col-md-6 card-body">     
+                                <div class="item div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
+                        
+                    </div>
+                        </div>
+                    
+                </div>
+                    
+                    
+           
+                
+                
+            </div>
+        </div>
+                        
+                        
+                        
+                        
+                        <!--SUBMENU-->
+                        
+                        
+                        
+                    </div>
+                    
+                        
+                       
+                    </div>
+                
+                
+                
+                    <!--PERSIANAS DUO-->
+                <div  class="card">
+                    <div id="p-traslucidas" class="card-header boton_backgroup" id="headingALU">
+                        <h2 class="mb-2 ">
+                            <a class="btn btn-lig btn-block text-lg-left" data-toggle="collapse" data-target="#collapseALU"><i class="fa fa-plus"></i>ALUMINIO</a>						
+                        </h2>
+                    </div>
+                       <div id="collapseALU" class="collapse" aria-labelledby="headingALU" data-parent="#accordionExample">
+                       
+                                      <!--==CUERPO DE LOS BOTONES==-->
+          <div class="bs-example-3">
+              
+            <div class="accordion" id="accordionExample3">
+                
+                <!--PERSIANAS DOBLES-->  
+                <div id="p-dobles"  class="card">
+                    
+                      <!--TITULO-->
+                    <div class=" card-header  boton_backgroup-2" id="headingFeQ">
+                        <h2 class=" mb-2">
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseFeQ"><i class="fa fa-plus"></i>VERTICALES ALUMINIO</a>
+                        </h2>
+                    </div>
+                    
+                    <!--BOTON 1-->
+                    <div id="collapseFeQ" class="collapse fondo_gris" aria-labelledby="headingFeQ" data-parent="#accordionExample3">
+               
+                      
+                        <div class="container">
+                        <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_aluminio));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
+                        <!--AREA DE TEXTO--> 
+                              <div class="col-lg-6 col-md-6 card-body">     
+                                <div class="item div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
+                        
+                    </div>
+                        </div>
+                    
+                </div>
+  
+                
+                
+            </div>
+        </div>
+                        
+                        
+                        
+                        
+                        <!--SUBMENU-->
+                        
+                        
+                        
+                    </div>
+                           
+                           
+                           
+                           
+                       </div>
+                </div>
+                
+                
+                
+                    <!--PERSIANAS DUO-->
+                <div  class="card">
+                    <div id="p-traslucidas" class="card-header boton_backgroup" id="headingHOR">
+                        <h2 class="mb-2 ">
+                            <a class="btn btn-lig btn-block text-lg-left" data-toggle="collapse" data-target="#collapseHOR"><i class="fa fa-plus"></i>HORIZONTALES</a>						
+                        </h2>
+                    </div>
+                       <div id="collapseHOR" class="collapse" aria-labelledby="headingHOR" data-parent="#accordionExample">
+                       
+                                      <!--==CUERPO DE LOS BOTONES==-->
+          <div class="bs-example-3">
+              
+            <div class="accordion" id="accordionExample3">
+                
+                <!--PERSIANAS DOBLES-->  
+                <div id="p-dobles"  class="card">
+                    
+                      <!--TITULO-->
+                    <div class=" card-header  boton_backgroup-2" id="headingFeR">
+                        <h2 class=" mb-2">
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseFeR"><i class="fa fa-plus"></i>MADERA</a>
+                        </h2>
+                    </div>
+                    
+                    <!--BOTON 1-->
+                    <div id="collapseFeR" class="collapse fondo_gris" aria-labelledby="headingFeR" data-parent="#accordionExample3">
+               
+                      
+                        <div class="container">
+                        <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_horizontal_madera));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
+                        <!--AREA DE TEXTO--> 
+                              <div class="col-lg-6 col-md-6 card-body">     
+                                <div class="item div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
+                        
+                    </div>
+                        </div>
+                    
+                </div>
+  
+                
+                
+            </div>
+        </div>
+                        
+                        
+                        
+                        
+                        <!--SUBMENU-->
+                        
+                        
+                        
+                    </div>
+                           
+                           
+                           
+                           
+                       </div>
+                </div>
+                
+                
+                
+                    <!--PERSIANAS DUO-->
+                <div  class="card">
+                    <div id="p-traslucidas" class="card-header boton_backgroup" id="headingVER">
+                        <h2 class="mb-2 ">
+                            <a class="btn btn-lig btn-block text-lg-left" data-toggle="collapse" data-target="#collapseVER"><i class="fa fa-plus"></i>VERTICALES</a>						
+                        </h2>
+                    </div>
+                       <div id="collapseVER" class="collapse" aria-labelledby="headingVER" data-parent="#accordionExample">
+                       
+                                      <!--==CUERPO DE LOS BOTONES==-->
+          <div class="bs-example-3">
+              
+            <div class="accordion" id="accordionExample3">
+                
+                <!--PERSIANAS DOBLES-->  
+                <div id="p-dobles"  class="card">
+                    
+                      <!--TITULO-->
+                    <div class=" card-header  boton_backgroup-2" id="headingFeA">
+                        <h2 class=" mb-2">
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseFeA"><i class="fa fa-plus"></i>TELA</a>
+                        </h2>
+                    </div>
+                    
+                    <!--BOTON 1-->
+                    <div id="collapseFeA" class="collapse fondo_gris" aria-labelledby="headingFeA" data-parent="#accordionExample3">
+               
+                      
+                        <div class="container">
+                        <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_persianas_vertical_tela));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
+                        <!--AREA DE TEXTO--> 
+                              <div class="col-lg-6 col-md-6 card-body">     
+                                <div class="item div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/persianas/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
+                        
+                    </div>
+                        </div>
+                    
+                </div>
+  
+                
+                
+            </div>
+        </div>
+                        
+                        
+                        
+                        
+                        <!--SUBMENU-->
+                        
+                        
+                        
+                    </div>
+                           
+                           
+                           
+                           
+                       </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 </div>
                 
                 
             </div>
         </div>
         
-      </div>
+    
       
     </section><!-- #facts -->
       
@@ -441,17 +1287,17 @@ HTML;
     <section id="toldos">
       <div class="container persianas-container wow fadeIn">
           <div class="section-header">
-            <h3 class="section-title">TOLDOS</h3>
-            <p class="section-description">Contamos con toldos manuales o automatizados.</p>
+            <h3 class="section-title zoom_title">TOLDOS</h3>
+            <p class="section-description zoom">Contamos con toldos manuales o automatizados.</p>
           </div>
           <div class="bs-example">
             <div class=" accordion" id="accordionExample">
                 
                 <!--TOLDOS AUTOMATIZADOS-->  
                 <div   class="card">
-                    <div id="t-auto" class="card-header boton_backgroup-2" id="headingTwo">
+                    <div id="t-auto" class="card-header boton_backgroup" id="headingTwo">
                         <h2 id="div-auto" class=" mb-2">
-                            <a  class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseFour">AUTOMATIZADOS<i class="fa fa-plus"></i> </a>
+                            <a  class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseFour">BRAZOS OCULTOS<i class="fa fa-plus"></i> </a>
                         </h2>
                     </div>
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
@@ -459,7 +1305,7 @@ HTML;
                         <div class="container">
                         <div class="row">    
                         <?php
-                            $resultado =array_filter($conexion->seleccionarValores($sql_toldos_automaticos));
+                            $resultado =array_filter($conexion->seleccionarValores($sql_toldos_brazos));
                             $i = 0;
                             foreach($resultado as $datos){
                               $idActual = $datos['id_producto'];
@@ -470,8 +1316,8 @@ HTML;
                                 echo <<<HTML
                         <!--AREA DE TEXTO--> 
                               <div class="col-lg-6 col-md-6 card-body">     
-                                <div class="item">
-                                        <img  src="view/dashboard/img/productos/toldos/$ImgActual" alt="" style="width:100%;height:300px;">
+                                <div class="item div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/toldos/$ImgActual" alt="" style="width:100%;height:300px;">
                                 </div>
                               </div>
 HTML;
@@ -488,9 +1334,9 @@ HTML;
                 
                  <!--MANUALES-->  
                 <div  class="card">
-                    <div id="t-manu" class="card-header boton_backgroup-2" id="headingTwo">
+                    <div id="t-manu" class="card-header boton_backgroup" id="headingTwo">
                         <h2 class=" mb-2">
-                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseFive">MANUALES <i class="fa fa-plus"></i></a>
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseFive">CAIDA LIBRE <i class="fa fa-plus"></i></a>
                         </h2>
                     </div>
                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
@@ -499,7 +1345,7 @@ HTML;
                         <div class="container">
                         <div class="row">    
                         <?php
-                            $resultado =array_filter($conexion->seleccionarValores($sql_toldos_manuales));
+                            $resultado =array_filter($conexion->seleccionarValores($sql_toldos_caida));
                             $i = 0;
                             foreach($resultado as $datos){
                               $idActual = $datos['id_producto'];
@@ -510,8 +1356,48 @@ HTML;
                                 echo <<<HTML
                         <!--AREA DE TEXTO--> 
                               <div class="col-lg-6 col-md-6 card-body">     
-                                <div class="item">
-                                        <img  src="view/dashboard/img/productos/toldos/$ImgActual" alt="" style="width:100%;height:300px;">
+                                <div class="item div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/toldos/$ImgActual" alt="" style="width:100%;height:300px;">
+                                </div>
+                              </div>
+HTML;
+                              }
+                            ?>
+                        
+                    </div>
+                        </div>
+                           
+                        
+                    </div>
+                </div>
+                
+                
+                      <!--MANUALES-->  
+                <div  class="card">
+                    <div id="t-manu" class="card-header boton_backgroup" id="headingSix">
+                        <h2 class=" mb-2">
+                            <a class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseSix">TIPO PERGOLA <i class="fa fa-plus"></i></a>
+                        </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        
+                        
+                        <div class="container">
+                        <div class="row">    
+                        <?php
+                            $resultado =array_filter($conexion->seleccionarValores($sql_toldos_pergolio));
+                            $i = 0;
+                            foreach($resultado as $datos){
+                              $idActual = $datos['id_producto'];
+                              $ImgActual = $datos['imagen_produ'];
+                              $fechaActual = $datos['fecha_produ'];
+                              $tipoActual = $datos['tipo_produ'];
+                              $i++;
+                                echo <<<HTML
+                        <!--AREA DE TEXTO--> 
+                              <div class="col-lg-6 col-md-6 card-body">     
+                                <div class="item div-img">
+                                        <img  class="img" src="view/dashboard/img/productos/toldos/$ImgActual" alt="" style="width:100%;height:300px;">
                                 </div>
                               </div>
 HTML;
@@ -540,16 +1426,25 @@ HTML;
     
       <section class="productos" id="sombrillas">
           <div class="section-header">
-            <h3 class="section-title">SOMBRILLAS DE SOL</h3>
-            <p class="section-description">Elige entre una gran variedad de sombrillas (encuentra sombrillas para jardín) con las que contamos y aprovecha todos sus grandes beneficios para la protección solar..</p>
+            <h3 class="section-title zoom_title">SOMBRILLAS DE SOL</h3>
+            <p class="section-description ">Elige entre una gran variedad de sombrillas (encuentra sombrillas para jardín) con las que contamos y aprovecha todos sus grandes beneficios para la protección solar..</p>
           </div>
-          
-      
-      <div class="container">
-        <div class="row about-container">
-
-             <!-- Traer los registros de sombrillas de sol -->
-          <?php
+    <div class="container persianas-container wow fadeIn">      
+      <div class="bs-example">
+            <div class=" accordion" id="accordionExample">
+                
+                <!--TOLDOS AUTOMATIZADOS-->  
+                <div   class="card">
+                    <div id="t-auto" class="card-header boton_backgroup" id="headingsombrilla">
+                        <h2 id="div-auto" class=" mb-2">
+                            <a  class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseSom">SOMBRILLAS<i class="fa fa-plus"></i> </a>
+                        </h2>
+                    </div>
+                    <div id="collapseSom" class="collapse" aria-labelledby="headingSom" data-parent="#accordionExample">
+                           
+                        <div class="container">
+                        <div class="row">    
+                        <?php
               $resultado =array_filter($conexion->seleccionarValores($sql_sombrilla));
               $i = 0;
               foreach($resultado as $datos){
@@ -560,19 +1455,25 @@ HTML;
             echo <<<HTML
             <div id="col_products" class="col-lg-6 col-md-6 card-body">     
                            
-                           <div class="item">
-                                   <img  src="view/dashboard/img/productos/sombrillas_sol/$ImgActual" alt="" style="width:100%;height: 400px;" >
+                           <div class="item div-img">
+                                   <img  class="img" src="view/dashboard/img/productos/sombrillas_sol/$ImgActual" alt="" style="width:100%;height: 400px;" >
                                  </div>
               </div>
 HTML;
           }
-        ?>              
+        ?>    
                     </div>
                         </div>
                            
-      
-     
-         
+                    </div>
+                </div>
+                
+               
+       
+                
+            </div>
+        </div>
+          </div>
       </section>
        
      <!--==========================
@@ -581,14 +1482,25 @@ HTML;
    
       <section class="productos" id="mallas">
           <div class="section-header">
-            <h3 class="section-title">MALLAS DE SOMBRA</h3>
-            <p class="section-description">Mallas sombra para estacionamiento o escuelas.</p>
+            <h3 class="section-title zoom_title">MALLAS DE SOMBRA</h3>
+            <p class="section-description zoom">Mallas sombra para estacionamiento o escuelas.</p>
           </div>
-          
-      
-      <div class="container">
-        <div class="row about-container">
-        <?php
+  <div class="container persianas-container wow fadeIn">      
+      <div class="bs-example">
+            <div class=" accordion" id="accordionExample">
+                
+                <!--TOLDOS AUTOMATIZADOS-->  
+                <div   class="card">
+                    <div id="t-auto" class="card-header boton_backgroup" id="headingsombrilla">
+                        <h2 id="div-auto" class=" mb-2">
+                            <a  class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseMal">MALLAS DE SOMBRA<i class="fa fa-plus"></i> </a>
+                        </h2>
+                    </div>
+                    <div id="collapseMal" class="collapse" aria-labelledby="headingMal" data-parent="#accordionExample">
+                           
+                        <div class="container">
+                        <div class="row">    
+               <?php
               $resultado =array_filter($conexion->seleccionarValores($sql_mallas));
               $i = 0;
               foreach($resultado as $datos){
@@ -599,20 +1511,25 @@ HTML;
             echo <<<HTML
             <div id="col_products" class="col-lg-6 col-md-6 card-body">     
                            
-                           <div class="item">
-                                   <img  src="view/dashboard/img/productos/mallas_sombra/$ImgActual" alt="" style="width:100%;height: 400px;">
+                           <div class="item div-img">
+                                   <img  class="img" src="view/dashboard/img/productos/mallas_sombra/$ImgActual" alt="" style="width:100%;height: 400px;">
                                  </div>
               </div>
 HTML;
           }
-        ?>        
-                        
+        ?>    
                     </div>
                         </div>
                            
-      
-     
-         
+                    </div>
+                </div>
+                
+               
+       
+                
+            </div>
+        </div>
+          </div>
       </section>
         
        <!--==========================
@@ -622,16 +1539,26 @@ HTML;
       
       <section class="productos" id="lonas">
           <div class="section-header">
-            <h3 class="section-title">LONAS DE USO RUDO Y PAPEL TAPIZ</h3>
-            <p class="section-description">Papel tapiz elegance y lonas de uso rudo.</p>
+            <h3 class="section-title zoom_title">PAPEL TAPIZ</h3>
+            <p class="section-description zoom">Elija entre la gran variedad de papel tapiz que tenemos para usted.</p>
           </div>
           
-      
-      <div class="container">
-        <div class="row about-container">
-
-           
-        <?php
+  <div class="container persianas-container wow fadeIn">      
+      <div class="bs-example">
+            <div class=" accordion" id="accordionExample">
+                
+                <!--TOLDOS AUTOMATIZADOS-->  
+                <div   class="card">
+                    <div id="t-auto" class="card-header boton_backgroup" id="headingsombrilla">
+                        <h2 id="div-auto" class=" mb-2">
+                            <a  class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapsePap">PAPEL TAPIZ<i class="fa fa-plus"></i> </a>
+                        </h2>
+                    </div>
+                    <div id="collapsePap" class="collapse" aria-labelledby="headingPap" data-parent="#accordionExample">
+                           
+                        <div class="container">
+                        <div class="row">    
+             <?php
               $resultado =array_filter($conexion->seleccionarValores($sql_lonas));
               $i = 0;
               foreach($resultado as $datos){
@@ -642,20 +1569,25 @@ HTML;
             echo <<<HTML
             <div id="col_products" class="col-lg-6   col-md-6 card-body">     
                            
-                           <div class="item">
-                                   <img  src="view/dashboard/img/productos/lonas_tapiz/$ImgActual" alt="" style="width:100%;height: 400px;">
+                           <div class="item div-img">
+                                   <img  class="img" src="view/dashboard/img/productos/lonas_tapiz/$ImgActual" alt="" style="width:100%;height: 400px;">
                                  </div>
               </div>
 HTML;
           }
-        ?>        
-                        
+        ?>       
                     </div>
                         </div>
                            
-      
-     
-         
+                    </div>
+                </div>
+                
+               
+       
+                
+            </div>
+        </div>
+          </div>
       </section>
         <!--==========================
     Tapetes decorativos
@@ -663,14 +1595,26 @@ HTML;
    
     <section class="productos" id="tapetes">
           <div class="section-header">
-            <h3 class="section-title">TAPETES DECORATIVOS</h3>
-            <p class="section-description">Tapetes decorativos de alta calidad.</p>
+            <h3 class="section-title zoom_title">TAPETES DECORATIVOS</h3>
+            <p class="section-description zoom">tapetes en alfombra o típo modular.</p>
           </div>
           
+      <div class="container persianas-container wow fadeIn">      
+      <div class="bs-example">
+            <div class=" accordion" id="accordionExample">
+                
+                <!--TOLDOS AUTOMATIZADOS-->  
+                <div   class="card">
+                    <div id="t-auto" class="card-header boton_backgroup" id="headingsombrilla">
+                        <h2 id="div-auto" class=" mb-2">
+                            <a  class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseTap">TAPETES DECORATIVOS<i class="fa fa-plus"></i> </a>
+                        </h2>
+                    </div>
+                    <div id="collapseTap" class="collapse" aria-labelledby="headingTap" data-parent="#accordionExample">
+                           
+                        <div class="container">
+                        <div class="row">    
       
-      <div class="container">
-        <div class="row about-container">
-
         <?php
               $resultado =array_filter($conexion->seleccionarValores($sql_tapetes));
               $i = 0;
@@ -682,20 +1626,80 @@ HTML;
             echo <<<HTML
             <div id="col_products" class="col-lg-6   col-md-6 card-body">     
                            
-                           <div class="item">
-                                   <img  src="view/dashboard/img/productos/tapetes/$ImgActual" alt="" style="width:100%;height: 400px;">
+                           <div class="item div-img">
+                                   <img  class="img" src="view/dashboard/img/productos/tapetes/$ImgActual" alt="" style="width:100%;height: 400px;">
+                                 </div>
+              </div>
+HTML;
+          }
+        ?>   
+                    </div>
+                        </div>
+                           
+                    </div>
+                </div>
+                
+               
+       
+                
+            </div>
+        </div>
+          </div>
+      </section>
+        <!--==========================
+    Anticiclonicas
+    ============================-->
+      
+         <section class="productos" id="anticiclonicas">
+          <div class="section-header">
+            <h3 class="section-title zoom_title">ANTICICLONICAS</h3>
+            <p class="section-description zoom">Tipo europea.</p>
+          </div>
+   <div class="container persianas-container wow fadeIn">      
+      <div class="bs-example">
+            <div class=" accordion" id="accordionExample">
+                
+                <!--TOLDOS AUTOMATIZADOS-->  
+                <div   class="card">
+                    <div id="t-auto" class="card-header boton_backgroup" id="headingsombrilla">
+                        <h2 id="div-auto" class=" mb-2">
+                            <a  class="btn btn-lig  btn-block text-lg-left" data-toggle="collapse" data-target="#collapseAnt">ANTICICLONICAS EUROPEAS<i class="fa fa-plus"></i> </a>
+                        </h2>
+                    </div>
+                    <div id="collapseAnt" class="collapse" aria-labelledby="headingAnt" data-parent="#accordionExample">
+                           
+                        <div class="container">
+                        <div class="row">    
+       <?php
+              $resultado =array_filter($conexion->seleccionarValores($sql_mallas_anticiclonicas));
+              $i = 0;
+              foreach($resultado as $datos){
+                $idActual = $datos['id_producto'];
+                $ImgActual = $datos['imagen_produ'];
+                $fechaActual = $datos['fecha_produ'];
+                $i++;
+            echo <<<HTML
+            <div id="col_products" class="col-lg-6   col-md-6 card-body">     
+                           
+                           <div class="item div-img">
+                                   <img  class="img" src="view/dashboard/img/productos/mallas_anticiclonicas/$ImgActual" alt="" style="width:100%;height: 400px;">
                                  </div>
               </div>
 HTML;
           }
         ?>     
-                        
                     </div>
                         </div>
                            
-      
-     
-         
+                    </div>
+                </div>
+                
+               
+       
+                
+            </div>
+        </div>
+          </div>   
       </section>
        
       
@@ -710,36 +1714,36 @@ HTML;
      <!--==========================
       Seccion acerca de la empresa
     ============================-->
-    <section id="about">
+    <section id="about" >
       <div class="container">
         <div class="row about-container">
 
           <div class="col-lg-6 content order-lg-1 order-2">
-            <h2 class="title">Somos Fabricantes</h2>
-            <p>Nos dedicamos a dar soluciones integrales en la decoracion de interiores y exteriores, con la mejor calidad y precios altamente competitivos</p>
+            <h2 class="title">PRIVACIDAD Y ESTILO QUE VAN DE LA MANO</h2>
+            <p>Todos nuestros productos se fabrican de acuerdo a la necesidad de cada cliente y  son de excelente calidad con precios altamente competitivos.</p>
 
             <div class="icon-box wow fadeInUp">
               <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-              <h4 class="title"><p>Línea exclusiva de persianas nivel premium</p></h4>
-              <p class="description">Solo se muestra en visita personalizada</p>
+              <h4 class="title"><p>LINEA DE PERSIANAS CLASICA, ELEGANCE Y PREMIUM:</p></h4>
+              <p class="description">Contamos con asesoría personalizada en interiorismo para brindarle la mejor opción en la selección correcta de sus PERSIANAS.</p>
             </div>
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
               <div class="icon"><i class="fa fa-pencil"></i></div>
-              <h4 class="title"><p>Nuestros productos se fabrican a la medida</p></h4>
-              <p class="description">De acuerdo al proyecto que solicite el cliente</p>
+              <h4 class="title"><p>FORMAS DE PAGO:</p></h4>
+              <p class="description">Aceptamos todas las tarjetas de débito o crédito Visa, MasterCard y American Epress, contamos con meses sin intereses.</p>
             </div>
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
               <div class="icon"><i class="fa fa-check" aria-hidden="true"></i></div>
-              <h4 class="title"><p>Precios especiales para hotelería.</p></h4>
-              <p class="description">Todas nuestras persianas enrollables y toldos se fabrican con la mejor calidad en materiales y se diseñan al gusto del cliente lo pueden solicitar de forma motorizada o manual</p>
+              <h4 class="title"><p>NUESTROS PRODUCTOS SE FABRICAN A LA MEDIDA:</p></h4>
+              <p class="description">Una vez que nuestro cliente selecciona el modelo de persiana, telas, texturas y tonos, casi de forma artesanal fabricamos sus persianas a la medida requerida, ya que nuestro tiempo de fabricación es muy rápido.</p>
               
-            <a type="button" id="btn-conocenos" href="#products" class="btn btn-warning">Conoce Nuestros Prodcutos</a>
+            <a type="button" id="btn-conocenos" href="#products" class="btn btn-warning">Conoce Nuestros Productos</a>
             </div>
           </div>
-
-          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+                      <div class="col-lg-1 order-lg-2 order-1 wow fadeInRight"> </div>
+          <div class="col-lg-5 background order-lg-2 order-1 wow fadeInRight"></div>
         </div>
 
       </div>
@@ -763,12 +1767,15 @@ HTML;
     <section id="measure">
       <div class="container wow fadeIn">
         <div class="row">
-          <div class="col-lg-6 text-center text-lg-left">
+          <div class="col-lg-3 ">
+              <img  class="img" src="img/medidor.png" alt="" style="width:100%;height: 400px;">
+          </div>
+          <div class="col-lg-4 text-center text-lg-left">
             <h3 class="cta-title">Como tomar medidas</h3>
-            <p class="cta-text">Tomar medidas para colocar personas puede ser un poco abrumador, pero en realidad es bastante directo y sencillo.</p>
+            <p class="cta-text">Tomar medidas para colocar persianas puede ser un poco abrumador, pero en realidad es bastante directo y sencillo.</p>
           </div>
           <div class="col-lg-5 text-center">
-            <iframe width="600" height="330" src="https://www.youtube.com/embed/p0632Oert0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="500" height="330" src="https://www.youtube.com/embed/p0632Oert0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
 
@@ -813,8 +1820,11 @@ HTML;
 
 
             <div class="social-links">
-              Nuestro facebook: <a title="Siguenos en nuestra pagina de Facebook" href="https://www.facebook.com/mrpersianas2015/?ref=br_rs" target="_blank"><i class="fa fa-facebook"></i></a><br><br>
-              Nuestro WhatsApp: <a title="Contactanos por WhatsApp" href="https://web.whatsapp.com/send?phone=+5219981073559&amp;text=Hola, me gustaría recibir mas información." target="_blank" ><i class="fa fa-whatsapp"></i></a>
+            <a title="Siguenos en nuestra pagina de Facebook" href="https://www.facebook.com/mrpersianas2015/?ref=br_rs" target="_blank"><i class="fa fa-facebook"></i></a> Facebook<br><br>
+            <a title="Contactanos por WhatsApp" href="https://web.whatsapp.com/send?phone=+5219981073559&amp;text=Hola, me gustaría recibir mas información." target="_blank" ><i class="fa fa-whatsapp"></i></a> WhatsApp<br><br>
+            <a title="Siguenos en nuestro canal de YouTube" href="https://www.youtube.com/channel/UC2bYdc7SPkVW8lC2XFiry1w" target="_blank" ><i class="fa fa-youtube"></i></a> Youtube<br><br>
+            <a title="Siguenos en Instagram" href="https://www.instagram.com/mr.persianas/?hl=es-la" target="_blank" ><i class="fa fa-instagram"></i></a> Instagram <br><br>
+            <a title="Siguenos en Twitter" href="https://twitter.com/MrPersianas" target="_blank" ><i class="fa fa-twitter"></i></a> Twitter 
             </div>
 
           </div>
@@ -865,7 +1875,7 @@ HTML;
      
   
       <div class="copyright">
-        &copy; Copyright <strong>Monkey.exe</strong>. Todos los derechos reservados.
+       <strong>Monkey.exe</strong>
       </div>
     </div>
   </footer><!-- #footer -->

@@ -46,8 +46,8 @@
               <div class="d-flex justify-content-between flex-wrap">
                 <div class="d-flex align-items-end flex-wrap">
                   <div class="mr-md-3 mr-xl-5">
-                    <h2>Bienvenidos al dashboard de Persianas</h2>
-                    <p class="mb-md-0">Administración de información del apartador de persianas.</p>
+                    <h2>Bienvenidos al dashboard de Tapetes Decorativos</h2>
+                    <p class="mb-md-0">Administración de información del apartador de tapetes decorativos.</p>
                   </div>
                 </div>
                 <div class="d-flex justify-content-between align-items-end flex-wrap">
