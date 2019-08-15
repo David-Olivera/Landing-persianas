@@ -29,6 +29,7 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/personalized.css" rel="stylesheet">  
     <link href="css/actualiz.css" rel="stylesheet">
+     <link href="css/icon.css" rel="stylesheet">
 
     
     
@@ -1820,11 +1821,12 @@ HTML;
 
 
             <div class="social-links">
-            <a title="Siguenos en nuestra pagina de Facebook" href="https://www.facebook.com/mrpersianas2015/?ref=br_rs" target="_blank"><i class="fa fa-facebook"></i></a> Facebook<br><br>
-            <a title="Contactanos por WhatsApp" href="https://web.whatsapp.com/send?phone=+5219981073559&amp;text=Hola, me gustaría recibir mas información." target="_blank" ><i class="fa fa-whatsapp"></i></a> WhatsApp<br><br>
-            <a title="Siguenos en nuestro canal de YouTube" href="https://www.youtube.com/channel/UC2bYdc7SPkVW8lC2XFiry1w" target="_blank" ><i class="fa fa-youtube"></i></a> Youtube<br><br>
-            <a title="Siguenos en Instagram" href="https://www.instagram.com/mr.persianas/?hl=es-la" target="_blank" ><i class="fa fa-instagram"></i></a> Instagram <br><br>
-            <a title="Siguenos en Twitter" href="https://twitter.com/MrPersianas" target="_blank" ><i class="fa fa-twitter"></i></a> Twitter 
+           <div class="icon_facebook"> <a title="Siguenos en nuestra pagina de Facebook" href="https://www.facebook.com/mrpersianas2015/?ref=br_rs" target="_blank"><i  class="fa fa-facebook "></i></a> Facebook<br><br></div>
+                
+                <div class="icon_whatsapp"><a title="Contactanos por WhatsApp" href="https://web.whatsapp.com/send?phone=+5219981073559&amp;text=Hola, me gustaría recibir mas información." target="_blank" ><i class="fa fa-whatsapp"></i></a> WhatsApp<br><br></div>
+                <div class="icon_youtube"><a title="Siguenos en nuestro canal de YouTube" href="https://www.youtube.com/channel/UC2bYdc7SPkVW8lC2XFiry1w" target="_blank" ><i class="fa fa-youtube"></i></a> Youtube<br><br></div>
+                <div class="icon_instagram"><a title="Siguenos en Instagram" href="https://www.instagram.com/mr.persianas/?hl=es-la" target="_blank" ><i class="fa fa-instagram"></i></a> Instagram <br><br></div>
+                <div class="icon_twitter"><a title="Siguenos en Twitter" href="https://twitter.com/MrPersianas" target="_blank" ><i class="fa fa-twitter"></i></a> Twitter </div>
             </div>
 
           </div>

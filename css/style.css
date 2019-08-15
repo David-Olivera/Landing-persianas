@@ -912,11 +912,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
-#contact .social-links a:hover {
-  background: #f78220;
-  color: #fff;
-}
-
 #contact .form #sendmessage {
   color: #f78220;
   border: 1px solid #f78220;

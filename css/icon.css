@@ -1,0 +1,25 @@
+
+#contact .icon_facebook a:hover {
+  background: #4267b2;
+  color: #fff;
+}
+
+#contact .icon_instagram a:hover {
+  background: #696969;
+  color: #fff;
+}
+
+#contact .icon_twitter a:hover {
+  background: #1da1f2;
+  color: #fff;
+}
+
+#contact .icon_youtube a:hover {
+  background: #ff0000;
+  color: #fff;
+}
+
+#contact .icon_whatsapp a:hover {
+  background: #09d261;
+  color: #fff;
+}
